@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2KVE5Y7EP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z2KVE5Y7EP');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Jonah Berger's STEPPS framework for creating viral products and content.">
+    <meta name="keywords" content="virality, STEPPS framework, product design, viral marketing, Jonah Berger">
+    <meta name="author" content="Devang Gaur">
+    <title>Virality Part 1 - STEPPS Framework by Jonah Berger - Devang Gaur</title>
+    <link rel="canonical" href="https://devanggaur.com/blog/virality-part-1.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://devanggaur.com/blog/virality-part-1.html">
+    <meta property="og:title" content="Virality Part 1 - STEPPS Framework by Jonah Berger">
+    <meta property="og:description" content="Introduction to Jonah Berger's STEPPS framework for creating viral products and content.">
+    <meta property="og:image" content="https://devanggaur.com/Pictures/Headshots/devang_gaur_hs.png">
+    <meta property="article:author" content="Devang Gaur">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+        @font-face {
+            font-family: 'Quicksand';
+            src: url('../Bitter,Lora,Manrope,Plus_Jakarta_Sans,Roboto/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+            font-weight: 300 700;
+            font-style: normal;
+        }
+
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #004c99;
+            --secondary: #00b4d8;
+            --accent: #00ff88;
+            --dark: #0a0e27;
+            --dark-alt: #1a1f3a;
+            --light: #f8f9fa;
+            --text-dark: #2c3e50;
+            --text-light: #6c757d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            margin-left: -1.2rem;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .blog-header {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--dark-alt) 100%);
+            color: white;
+            padding: 120px 2rem 60px;
+            margin-top: 60px;
+        }
+
+        .blog-header-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blog-category {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #9333ea;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .blog-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 2rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 2rem;
+        }
+
+        .blog-content h2 {
+            font-size: 2rem;
+            margin: 2.5rem 0 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .blog-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-dark);
+        }
+
+        .blog-content p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .blog-content ul, .blog-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .blog-content li {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+
+        .blog-content strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 180, 216, 0.05) 100%);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .related-posts {
+            background: var(--light);
+            padding: 60px 2rem;
+        }
+
+        .related-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .related-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .related-header h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .related-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-left: 4px solid #9333ea;
+            text-decoration: none;
+            display: block;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .related-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .related-date {
+            color: var(--text-light);
+        }
+
+        .related-category {
+            color: #9333ea;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .related-card h3 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .related-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+
+            .blog-content {
+                padding: 40px 1.5rem;
+            }
+
+            .blog-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .blog-content p,
+            .blog-content li {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../devang-logo.png" alt="Devang Gaur">
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#expertise">Expertise</a></li>
+                <li><a href="../index.html#blog">Blog</a></li>
+                <li><a href="../index.html#publications">Publications</a></li>
+                <li><a href="../index.html#speaking">Speaking</a></li>
+                <li><a href="../index.html#media">Media</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <div class="blog-header-container">
+            <span class="blog-category">Design</span>
+            <h1>Virality is not born, it is made: Part 1</h1>
+            <div class="blog-meta">
+                <div class="blog-meta-item">
+                    <span>September 7, 2021</span>
+                </div>
+                <div class="blog-meta-item">
+                    <span>6 min read</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="blog-content">
+        <p>Why do some products become viral sensations while others with similar features fade into obscurity? The answer might surprise you: virality isn't luck. It's engineered.</p>
+
+        <h2>The STEPPS Framework</h2>
+
+        <p>Jonah Berger, a marketing professor at the Wharton School, spent years researching what makes content and products contagious. His findings, published in "Contagious: Why Things Catch On," reveal that viral success follows predictable patterns.</p>
+
+        <p>The secret lies in six key principles, forming the acronym <strong>STEPPS</strong>:</p>
+
+        <div class="highlight-box">
+            <p><strong>STEPPS Framework:</strong></p>
+            <ul>
+                <li><strong>S</strong>ocial Currency</li>
+                <li><strong>T</strong>riggers</li>
+                <li><strong>E</strong>motion</li>
+                <li><strong>P</strong>ublic</li>
+                <li><strong>P</strong>ractical Value</li>
+                <li><strong>S</strong>tories</li>
+            </ul>
+        </div>
+
+        <h2>Breaking Down Each Element</h2>
+
+        <h3>Social Currency</h3>
+
+        <p>People share things that make them look good, feel smart, or appear insider-savvy. When you use a product that enhances your social standing, you naturally want to share it.</p>
+
+        <p><strong>Example: Smallcase</strong> enables users to create and share custom investment portfolios. When someone shares their successful smallcase, they're not just sharing an investment strategy; they're showcasing their financial acumen.</p>
+
+        <h3>Triggers</h3>
+
+        <p>Products that are top-of-mind are tip-of-tongue. The key is creating associations with frequent occurrences in users' daily lives.</p>
+
+        <p><strong>Example: Strava</strong> triggers itself through routine activities. Every run, every bike ride, every workout becomes a trigger to open the app, track the activity, and potentially share achievements.</p>
+
+        <h3>Emotion</h3>
+
+        <p>Content that evokes strong emotions, whether positive or negative, is more likely to be shared. But not all emotions are created equal. High-arousal emotions (awe, excitement, anger) drive more sharing than low-arousal ones (sadness).</p>
+
+        <p><strong>Example: Zerodha's educational campaigns</strong> evoke both excitement (about financial independence) and a touch of righteous anger (about traditional brokerage fees), motivating users to share their messages.</p>
+
+        <h3>Public</h3>
+
+        <p>When products make their usage visible, they advertise themselves. The more public a product's use, the more it can spread through observation and imitation.</p>
+
+        <p><strong>Example: Duolingo's streak feature</strong> isn't just internal gamification; it's designed to be shared. Users proudly display their 100-day or 365-day streaks on social media, making their dedication publicly visible.</p>
+
+        <h3>Practical Value</h3>
+
+        <p>People share useful information. Products that solve real problems or provide genuine utility naturally generate word-of-mouth.</p>
+
+        <p><strong>Example: Payment apps</strong> like Google Pay and PhonePe grew virally in India partly because they solved the practical problem of digital payments. The cashback incentives added practical value that users eagerly shared with friends.</p>
+
+        <h3>Stories</h3>
+
+        <p>Information travels under the guise of idle chatter. When your product is embedded in a larger narrative, people share the story, and your product comes along for the ride.</p>
+
+        <p><strong>Example: CRED</strong> created a story around financial responsibility and exclusive membership. Users don't just use CRED; they tell the story of being "creditworthy enough" to be accepted.</p>
+
+        <h2>Why This Matters for Product Development</h2>
+
+        <p>Understanding STEPPS transforms how you approach product design. Instead of building features and hoping they go viral, you can intentionally design for virality:</p>
+
+        <ul>
+            <li><strong>Design moments worth sharing:</strong> What aspect of your product makes users look good when they share it?</li>
+            <li><strong>Create natural triggers:</strong> How can your product associate itself with daily activities or common situations?</li>
+            <li><strong>Evoke the right emotions:</strong> What feelings do you want users to experience and share?</li>
+            <li><strong>Make usage visible:</strong> How can you make private usage public in a natural, non-intrusive way?</li>
+            <li><strong>Deliver clear value:</strong> What practical problem does your product solve better than alternatives?</li>
+            <li><strong>Craft a narrative:</strong> What's the story users tell when they talk about your product?</li>
+        </ul>
+
+        <h2>The Strategic Approach</h2>
+
+        <p>Viral success isn't about checking all six boxes equally. Different products emphasize different elements based on their nature and target audience. The key is to:</p>
+
+        <ol>
+            <li><strong>Identify your strongest elements:</strong> Which STEPPS principles align naturally with your product?</li>
+            <li><strong>Double down strategically:</strong> Amplify those elements through deliberate design choices</li>
+            <li><strong>Measure and iterate:</strong> Track which features drive sharing and refine based on data</li>
+        </ol>
+
+        <div class="highlight-box">
+            <p><strong>Key Takeaway:</strong> Virality is a product feature, not a marketing accident. By understanding and applying the STEPPS framework, you can engineer products that people naturally want to share.</p>
+        </div>
+
+        <p>In Part 2 of this series, we'll dive deep into Social Currency and explore specific strategies companies use to make their products inherently shareable. Stay tuned.</p>
+    </article>
+
+    <section class="related-posts">
+        <div class="related-container">
+            <div class="related-header">
+                <h2>Related Posts</h2>
+            </div>
+            <div class="related-grid">
+                <a href="virality-part-2.html" class="related-card">
+                    <div class="related-meta">
+                        <span class="related-date">Sep 15, 2021</span>
+                        <span class="related-category">Products</span>
+                    </div>
+                    <h3>Virality is Not Born, It Is Made: Part 2 | Minting Social Currency</h3>
+                    <p>Exploring how companies strategically design products to become viral through social currency.</p>
+                </a>
+
+                <a href="user-behavior.html" class="related-card">
+                    <div class="related-meta">
+                        <span class="related-date">Jun 5, 2021</span>
+                        <span class="related-category">Products</span>
+                    </div>
+                    <h3>What Drives User Behavior?</h3>
+                    <p>Exploring Prof. B.J. Fogg's behavior model and how tech companies leverage psychology to create habit-forming products.</p>
+                </a>
+
+                <a href="mvp-vs-mlp.html" class="related-card">
+                    <div class="related-meta">
+                        <span class="related-date">Jun 18, 2021</span>
+                        <span class="related-category">Products</span>
+                    </div>
+                    <h3>Is Minimum Viable Product, Viable Anymore?</h3>
+                    <p>Why the traditional MVP approach has become less effective and why MLP is a better option.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Devang Gaur. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Enhanced Analytics -->
+    <script>
+        // Track scroll depth
+        function trackScrollDepth() {
+            const milestones = [25, 50, 75, 100];
+            const tracked = new Set();
+
+            window.addEventListener('scroll', () => {
+                const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+                milestones.forEach(milestone => {
+                    if (scrollPercent >= milestone && !tracked.has(milestone)) {
+                        tracked.add(milestone);
+                        gtag('event', 'scroll_depth', {
+                            'event_category': 'Blog Engagement',
+                            'event_label': milestone + '%',
+                            'value': milestone
+                        });
+                    }
+                });
+            });
+        }
+
+        // Track reading time
+        function trackReadingTime() {
+            let startTime = Date.now();
+            const intervals = [30, 60, 120, 180];
+            const tracked = new Set();
+
+            setInterval(() => {
+                const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+                intervals.forEach(interval => {
+                    if (timeSpent >= interval && !tracked.has(interval)) {
+                        tracked.add(interval);
+                        gtag('event', 'reading_time', {
+                            'event_category': 'Blog Engagement',
+                            'event_label': interval + 's'
+                        });
+                    }
+                });
+            }, 1000);
+        }
+
+        // Track external links
+        function trackExternalLinks() {
+            document.querySelectorAll('a[href^="http"]').forEach(link => {
+                link.addEventListener('click', () => {
+                    gtag('event', 'click', {
+                        'event_category': 'External Link',
+                        'event_label': link.href
+                    });
+                });
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            trackScrollDepth();
+            trackReadingTime();
+            trackExternalLinks();
+        });
+    </script>
+</body>
+</html>

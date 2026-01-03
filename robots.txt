@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+
+# Sitemap
+Sitemap: https://devanggaur.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow admin or private directories (if any)
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
