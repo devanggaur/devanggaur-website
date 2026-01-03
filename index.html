@@ -279,9 +279,11 @@
 
         /* Payment Flow Animation */
         .hero-image-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline-block;
+            padding: 4px;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            border-radius: 50%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
             margin-top: 3rem;
         }
 
@@ -289,9 +291,8 @@
             width: 450px;
             height: 450px;
             border-radius: 50%;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
             object-fit: cover;
-            border: 4px solid var(--accent);
+            display: block;
         }
 
         /* Section Styles */
