@@ -1,0 +1,60 @@
+# Devang Gaur - Personal Website
+# https://devanggaur.com
+
+## About
+Devang Gaur is a Senior Product Manager specializing in global payments, AI-powered optimization, fraud detection, and risk management. 8+ years of experience at Adobe, PayPal, and Dell Technologies with $40M+ revenue impact.
+
+## Professional Experience
+- Senior Product Manager at Adobe (Current)
+- Product Manager at PayPal
+- Product Manager at Dell Technologies
+- Master's in Information Systems Management from Carnegie Mellon University
+
+## Expertise
+- Payment Processing & Optimization
+- Artificial Intelligence & Machine Learning
+- Fraud Detection & Risk Management
+- Product Management & Strategy
+- PSD2 Compliance & 3DS2 Authentication
+- Global Payment Solutions
+
+## Content Available
+
+### Homepage
+URL: https://devanggaur.com/
+Description: Professional portfolio, experience, expertise, and contact information
+
+### Blog Posts
+- Why Do Products Fail? Painkiller vs Vitamin Framework
+  URL: https://devanggaur.com/blog/why-products-fail.html
+
+- Manipulation Matrix: Product Engagement Strategies
+  URL: https://devanggaur.com/blog/manipulation-matrix.html
+
+- Understanding User Behavior in Product Design
+  URL: https://devanggaur.com/blog/user-behavior.html
+
+- MVP vs MLP: Product Development Approaches
+  URL: https://devanggaur.com/blog/mvp-vs-mlp.html
+
+- Virality Part 1: Building Viral Products
+  URL: https://devanggaur.com/blog/virality-part-1.html
+
+- Virality Part 2: Scaling Viral Growth
+  URL: https://devanggaur.com/blog/virality-part-2.html
+
+- Spotify Tribe Model: Agile Team Structures
+  URL: https://devanggaur.com/blog/spotify-tribe-model.html
+
+- Disruptive Innovation: Market Disruption Strategies
+  URL: https://devanggaur.com/blog/disruptive-innovation.html
+
+## Indexing Preferences
+Allow: All content is available for indexing and training
+Focus Areas: Product Management, Payments Technology, AI/ML, Fraud Detection, Risk Management
+
+## Contact
+LinkedIn: https://www.linkedin.com/in/devang-gaur/
+
+## Last Updated
+2025-01-04
