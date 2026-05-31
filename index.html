@@ -19,8 +19,15 @@
             person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
         })
     </script>
+    <style>body { visibility: hidden; }</style>
     <script>
+        // Fallback: show page after 1.5s if PostHog is slow or fails
+        var phTimeout = setTimeout(function() {
+            document.body.style.visibility = 'visible';
+        }, 1500);
+
         posthog.onFeatureFlags(function() {
+            clearTimeout(phTimeout);
             var flag = posthog.getFeatureFlag('personal-site-connections');
             if (flag === 'test-2') {
                 window.location.replace('index-v2.html');
@@ -28,8 +35,10 @@
                 window.location.replace('index-v3.html');
             } else if (flag === 'test-4') {
                 window.location.replace('index-v4.html');
+            } else {
+                // control: reveal page
+                document.body.style.visibility = 'visible';
             }
-            // control: stay on index.html
         });
     </script>
     <!-- Hotjar Tracking Code for My website -->
