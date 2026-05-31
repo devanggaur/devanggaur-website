@@ -87,36 +87,6 @@
         will-change: left, top;
     }
 
-    /* ── Ticker ──────────────────────────────────────── */
-    .ticker-wrap {
-        background: var(--accent);
-        overflow: hidden;
-        padding: 0.45rem 0;
-        position: relative;
-        z-index: 200;
-    }
-
-    .ticker-inner {
-        display: flex;
-        white-space: nowrap;
-        animation: ticker-run 30s linear infinite;
-    }
-
-    .ticker-inner span {
-        font-family: var(--sans);
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: #0C0C0C;
-        padding-right: 3rem;
-    }
-
-    @keyframes ticker-run {
-        from { transform: translateX(0); }
-        to   { transform: translateX(-50%); }
-    }
-
     /* ── Floating Pill Nav ───────────────────────────── */
     .pill-nav {
         position: fixed;
@@ -1286,38 +1256,6 @@
 <!-- Cursor glow -->
 <div id="glow"></div>
 
-<!-- Ticker -->
-<div class="ticker-wrap">
-    <div class="ticker-inner" id="ticker">
-        <span>PRODUCT MANAGER</span><span>·</span>
-        <span>GOOGLE PAYMENTS</span><span>·</span>
-        <span>YOUTUBE</span><span>·</span>
-        <span>GOOGLE PLAY</span><span>·</span>
-        <span>GOOGLE STORE</span><span>·</span>
-        <span>FULL BUYFLOW</span><span>·</span>
-        <span>LITE BUYFLOW</span><span>·</span>
-        <span>ADOBE</span><span>·</span>
-        <span>PAYPAL</span><span>·</span>
-        <span>AI/ML IN PAYMENTS</span><span>·</span>
-        <span>FRAUD DETECTION</span><span>·</span>
-        <span>CARNEGIE MELLON</span><span>·</span>
-        <span>PAYMENT OPTIMIZATION</span><span>·</span>
-        <!-- duplicate for seamless loop -->
-        <span>PRODUCT MANAGER</span><span>·</span>
-        <span>GOOGLE PAYMENTS</span><span>·</span>
-        <span>YOUTUBE</span><span>·</span>
-        <span>GOOGLE PLAY</span><span>·</span>
-        <span>GOOGLE STORE</span><span>·</span>
-        <span>FULL BUYFLOW</span><span>·</span>
-        <span>LITE BUYFLOW</span><span>·</span>
-        <span>ADOBE</span><span>·</span>
-        <span>PAYPAL</span><span>·</span>
-        <span>AI/ML IN PAYMENTS</span><span>·</span>
-        <span>FRAUD DETECTION</span><span>·</span>
-        <span>CARNEGIE MELLON</span><span>·</span>
-        <span>PAYMENT OPTIMIZATION</span><span>·</span>
-    </div>
-</div>
 
 <!-- Pill Nav -->
 <nav class="pill-nav" id="pill-nav">
