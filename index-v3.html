@@ -611,10 +611,12 @@
 
     .career-card-role {
         font-family: var(--sans);
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 700;
         color: var(--text);
-        line-height: 1.25;
+        line-height: 1.3;
+        white-space: normal;
+        overflow: visible;
     }
 
     .career-card-desc {
@@ -625,11 +627,22 @@
     }
 
     .career-card-logo {
-        height: 22px;
+        height: 32px;
         width: auto;
+        max-width: 140px;
+        align-self: flex-start;
         filter: brightness(0) invert(0.4);
         margin-top: auto;
         padding-top: 0.5rem;
+    }
+
+    img.career-card-logo[alt="CMU"] {
+        height: auto;
+        max-height: 56px;
+        max-width: 200px;
+        object-fit: contain;
+        filter: none;
+        opacity: 0.7;
     }
 
     .career-card.active-role .career-card-logo {
@@ -1431,7 +1444,7 @@
             </div>
             <div class="career-card-role">Graduate Studies</div>
             <p class="career-card-desc">Graduate education at one of the world's top technology and engineering institutions. Built the analytical and systems-thinking foundation that underpins a career in payments product management.</p>
-            <img src="cmu-logo.avif" alt="CMU" class="career-card-logo">
+            <img src="cmu-gray.png" alt="CMU" class="career-card-logo">
         </div>
     </div>
 </section>
