@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2KVE5Y7EP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2KVE5Y7EP');
+    </script>
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:6612265,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devang Gaur — Product Manager, Google Payments</title>
+    <meta name="description" content="Devang Gaur is a Product Manager at Google Payments, building the consumer checkout platform behind YouTube, Google Play, and Google Store. Previously at Adobe and PayPal.">
+    <meta name="keywords" content="Devang Gaur, Product Manager, Google Payments, YouTube, Google Play, Adobe, PayPal, Buyflow, Carnegie Mellon">
+    <meta name="author" content="Devang Gaur">
+    <link rel="canonical" href="https://devanggaur.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devanggaur.com/">
+    <meta property="og:title" content="Devang Gaur — Product Manager, Google Payments">
+    <meta property="og:description" content="Building the consumer checkout platform behind YouTube, Google Play, and Google Store.">
+    <meta property="og:image" content="https://devanggaur.com/Pictures/Headshots/devang_gaur_hs.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Devang Gaur — Product Manager, Google Payments">
+    <meta property="twitter:image" content="https://devanggaur.com/Pictures/Headshots/devang_gaur_hs.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+    /* ── Variables ───────────────────────────────────── */
+    :root {
+        --bg:         #EEF2F7;
+        --white:      #FFFFFF;
+        --ink:        #08101E;
+        --ink-2:      #3D5068;
+        --ink-3:      #7A8FA6;
+        --accent:     #635BFF;
+        --acc-bg:     #EEEEFE;
+        --acc-dark:   #4A43E8;
+        --green:      #10B981;
+        --grn-bg:     #ECFDF5;
+        --border:     #DDE3ED;
+        --sans:       'Bricolage Grotesque', sans-serif;
+        --body:       'Inter', sans-serif;
+        --mono:       'Space Mono', monospace;
+        --r:          12px;
+        --hero-bg:    #060C1A;
+    }
+
+    /* ── Reset ───────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--body); background: var(--bg); color: var(--ink); line-height: 1.6; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ── NAV ─────────────────────────────────────────── */
+    .nav {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 clamp(1.5rem, 5vw, 5rem);
+        z-index: 200;
+        transition: background 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .nav.scrolled {
+        background: rgba(255,255,255,0.96);
+        backdrop-filter: blur(24px);
+        box-shadow: 0 1px 0 var(--border);
+    }
+
+    .nav-inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .brand-mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        background: var(--accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--sans);
+        font-weight: 800;
+        font-size: 0.82rem;
+        color: white;
+        letter-spacing: 0.02em;
+        flex-shrink: 0;
+    }
+
+    .nav.scrolled .brand-mark { background: var(--accent); }
+
+    .brand-name {
+        font-family: var(--sans);
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.9);
+        transition: color 0.3s;
+    }
+
+    .nav.scrolled .brand-name { color: var(--ink); }
+
+    .nav-links {
+        display: flex;
+        gap: 0.25rem;
+        list-style: none;
+    }
+
+    .nav-links a {
+        font-family: var(--body);
+        font-size: 0.82rem;
+        font-weight: 500;
+        color: rgba(255,255,255,0.65);
+        padding: 0.4rem 0.75rem;
+        border-radius: 6px;
+        transition: color 0.2s, background 0.2s;
+    }
+
+    .nav-links a:hover { color: rgba(255,255,255,0.95); }
+    .nav.scrolled .nav-links a { color: var(--ink-2); }
+    .nav.scrolled .nav-links a:hover { color: var(--accent); background: var(--acc-bg); }
+
+    .nav-cta {
+        font-family: var(--sans);
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 0.5rem 1.25rem;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.12);
+        color: white;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.2s;
+        white-space: nowrap;
+    }
+
+    .nav-cta:hover { background: var(--accent); border-color: var(--accent); }
+    .nav.scrolled .nav-cta { background: var(--accent); color: white; border-color: var(--accent); }
+    .nav.scrolled .nav-cta:hover { background: var(--acc-dark); }
+
+    /* Mobile nav */
+    .nav-mobile-btn {
+        display: none;
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 8px;
+        padding: 0.4rem 0.7rem;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav.scrolled .nav-mobile-btn { color: var(--ink); background: var(--bg); border-color: var(--border); }
+
+    .mobile-drawer {
+        display: none;
+        position: fixed;
+        top: 60px; left: 0; right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 2rem;
+        z-index: 199;
+        flex-direction: column;
+        gap: 0.15rem;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .mobile-drawer.open { display: flex; }
+
+    .mobile-drawer a {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--ink-2);
+        padding: 0.65rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-drawer a:last-child { border-bottom: none; }
+
+    /* ── HERO ────────────────────────────────────────── */
+    #home {
+        min-height: 100vh;
+        background:
+            radial-gradient(ellipse at 10% 60%, rgba(99,91,255,0.4) 0%, transparent 50%),
+            radial-gradient(ellipse at 85% 30%, rgba(16,185,129,0.18) 0%, transparent 50%),
+            radial-gradient(ellipse at 50% 90%, rgba(59,130,246,0.15) 0%, transparent 45%),
+            var(--hero-bg);
+        display: flex;
+        align-items: center;
+        padding: 7rem clamp(1.5rem, 5vw, 5rem) 5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Subtle grid overlay */
+    #home::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image:
+            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+        background-size: 60px 60px;
+        pointer-events: none;
+    }
+
+    .hero-grid {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 440px;
+        gap: 4rem;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(16,185,129,0.12);
+        border: 1px solid rgba(16,185,129,0.3);
+        border-radius: 100px;
+        padding: 0.3rem 0.8rem;
+        font-family: var(--mono);
+        font-size: 0.7rem;
+        color: var(--green);
+        margin-bottom: 1.75rem;
+    }
+
+    .status-dot {
+        width: 7px; height: 7px;
+        border-radius: 50%;
+        background: var(--green);
+        animation: pulse-green 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-green {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%       { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .hero-name {
+        font-family: var(--sans);
+        font-size: clamp(3rem, 6vw, 6.5rem);
+        font-weight: 800;
+        color: white;
+        line-height: 1.0;
+        letter-spacing: -0.03em;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-name .accent-word { color: var(--accent); }
+
+    .hero-sub {
+        font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+        color: rgba(255,255,255,0.55);
+        line-height: 1.75;
+        max-width: 480px;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-sub strong { color: rgba(255,255,255,0.85); font-weight: 500; }
+
+    .hero-actions {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        margin-bottom: 3.5rem;
+    }
+
+    .btn-primary {
+        font-family: var(--sans);
+        font-size: 0.85rem;
+        font-weight: 700;
+        padding: 0.75rem 1.75rem;
+        border-radius: 8px;
+        background: var(--accent);
+        color: white;
+        transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--acc-dark); transform: translateY(-1px); }
+
+    .btn-outline-light {
+        font-family: var(--sans);
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 0.75rem 1.75rem;
+        border-radius: 8px;
+        background: transparent;
+        color: rgba(255,255,255,0.8);
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.2s;
+    }
+
+    .btn-outline-light:hover {
+        background: rgba(255,255,255,0.08);
+        border-color: rgba(255,255,255,0.4);
+        color: white;
+        transform: translateY(-1px);
+    }
+
+    .hero-logos {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-logos-label {
+        font-family: var(--mono);
+        font-size: 0.62rem;
+        color: rgba(255,255,255,0.3);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .hero-logos img {
+        height: 18px;
+        width: auto;
+        filter: brightness(0) invert(1);
+        opacity: 0.35;
+        transition: opacity 0.2s;
+    }
+
+    .hero-logos img:hover { opacity: 0.75; }
+
+    /* ── 3D Payment Card ──────────────────────────────── */
+    .card-scene {
+        perspective: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .payment-card {
+        width: 400px;
+        height: 252px;
+        border-radius: 20px;
+        background: linear-gradient(135deg, #1C2E5A 0%, #0E1D3E 55%, #081528 100%);
+        padding: 1.75rem 2rem;
+        position: relative;
+        transform: perspective(1200px) rotateX(8deg) rotateY(-14deg) rotateZ(1deg);
+        box-shadow:
+            28px 48px 90px rgba(0,0,0,0.7),
+            0 0 0 1px rgba(255,255,255,0.1),
+            inset 0 1px 0 rgba(255,255,255,0.08);
+        transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        color: white;
+        overflow: hidden;
+        cursor: default;
+        user-select: none;
+    }
+
+    .payment-card:hover {
+        transform: perspective(1200px) rotateX(2deg) rotateY(-4deg) rotateZ(0deg);
+    }
+
+    /* Card sheen */
+    .payment-card::before {
+        content: '';
+        position: absolute;
+        top: -60%;
+        left: -40%;
+        width: 180%;
+        height: 180%;
+        background: linear-gradient(
+            108deg,
+            transparent 40%,
+            rgba(255,255,255,0.06) 50%,
+            transparent 60%
+        );
+        pointer-events: none;
+    }
+
+    /* Embossed pattern */
+    .payment-card::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image:
+            radial-gradient(circle at 90% 10%, rgba(99,91,255,0.25) 0%, transparent 40%),
+            radial-gradient(circle at 10% 90%, rgba(16,185,129,0.12) 0%, transparent 40%);
+        pointer-events: none;
+    }
+
+    .card-row-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* EMV Chip */
+    .chip {
+        width: 44px;
+        height: 34px;
+        border-radius: 6px;
+        background: linear-gradient(135deg, #C8951A 0%, #EBC547 40%, #D4A820 70%, #B8831A 100%);
+        position: relative;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+
+    .chip::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(transparent 33%, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.1) 34%, transparent 34%),
+            linear-gradient(transparent 66%, rgba(0,0,0,0.1) 66%, rgba(0,0,0,0.1) 67%, transparent 67%),
+            linear-gradient(90deg, transparent 33%, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.1) 34%, transparent 34%),
+            linear-gradient(90deg, transparent 66%, rgba(0,0,0,0.1) 66%, rgba(0,0,0,0.1) 67%, transparent 67%);
+        border-radius: 6px;
+    }
+
+    .card-logo-wrap {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .card-google-logo {
+        height: 20px;
+        width: auto;
+        filter: brightness(0) invert(1);
+        opacity: 0.9;
+    }
+
+    .card-brand-text {
+        font-family: var(--mono);
+        font-size: 0.65rem;
+        color: rgba(255,255,255,0.6);
+        letter-spacing: 0.05em;
+    }
+
+    .card-pan {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card-pan span {
+        font-family: var(--mono);
+        font-size: 0.82rem;
+        letter-spacing: 0.18em;
+        color: rgba(255,255,255,0.45);
+    }
+
+    .card-pan .pan-role {
+        font-family: var(--sans);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: rgba(255,255,255,0.9);
+        text-transform: uppercase;
+    }
+
+    .card-row-bottom {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card-field { }
+    .card-field-label {
+        font-family: var(--mono);
+        font-size: 0.52rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.3);
+        margin-bottom: 0.2rem;
+    }
+
+    .card-field-value {
+        font-family: var(--sans);
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 0.02em;
+    }
+
+    .card-field-value.small {
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        color: rgba(255,255,255,0.7);
+    }
+
+    .card-circles {
+        display: flex;
+        margin-left: -10px;
+    }
+
+    .card-circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+
+    .cc1 { background: #FF5F00; margin-right: -12px; z-index: 1; }
+    .cc2 { background: #EB001B; }
+
+    .card-approved-badge {
+        position: absolute;
+        bottom: -16px;
+        right: 24px;
+        background: var(--green);
+        color: white;
+        font-family: var(--mono);
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 0.3rem 0.75rem;
+        border-radius: 100px;
+        box-shadow: 0 4px 16px rgba(16,185,129,0.4);
+        z-index: 10;
+        white-space: nowrap;
+    }
+
+    /* ── Section shell ───────────────────────────────── */
+    .section-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 clamp(1.5rem, 5vw, 5rem);
+    }
+
+    section.light  { background: var(--white); }
+    section.tinted { background: var(--bg); }
+
+    section { padding: 90px 0; }
+
+    .eyebrow {
+        font-family: var(--mono);
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .eyebrow::before { content: '//'; color: var(--ink-3); }
+
+    .section-heading {
+        font-family: var(--sans);
+        font-size: clamp(2rem, 3.5vw, 3rem);
+        font-weight: 800;
+        color: var(--ink);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+    }
+
+    /* ── ABOUT — Dashboard ───────────────────────────── */
+    #about { background: var(--white); }
+
+    .metrics-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+        margin: 2.5rem 0 3.5rem;
+    }
+
+    .metric-tile {
+        background: var(--white);
+        padding: 1.5rem 1.75rem;
+        transition: background 0.2s;
+    }
+
+    .metric-tile:hover { background: var(--bg); }
+
+    .metric-num {
+        font-family: var(--sans);
+        font-size: 2.4rem;
+        font-weight: 800;
+        color: var(--ink);
+        line-height: 1;
+        margin-bottom: 0.3rem;
+        letter-spacing: -0.03em;
+    }
+
+    .metric-num .metric-unit {
+        font-size: 1.2rem;
+        color: var(--ink-3);
+    }
+
+    .metric-label {
+        font-family: var(--body);
+        font-size: 0.8rem;
+        color: var(--ink-3);
+        line-height: 1.4;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        align-items: start;
+    }
+
+    .about-statement {
+        font-family: var(--sans);
+        font-size: clamp(1.4rem, 2.5vw, 2rem);
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.35;
+        letter-spacing: -0.02em;
+    }
+
+    .about-statement .highlight { color: var(--accent); }
+
+    .about-detail p {
+        font-size: 0.95rem;
+        color: var(--ink-2);
+        line-height: 1.8;
+        margin-bottom: 1.1rem;
+    }
+
+    .about-detail p strong { color: var(--ink); font-weight: 600; }
+    .about-detail p:last-of-type { margin-bottom: 1.5rem; }
+
+    .capability-chips {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .chip-pill {
+        font-family: var(--mono);
+        font-size: 0.68rem;
+        font-weight: 700;
+        padding: 0.35rem 0.8rem;
+        border-radius: 100px;
+        background: var(--acc-bg);
+        color: var(--accent);
+        border: 1px solid rgba(99,91,255,0.2);
+        letter-spacing: 0.04em;
+    }
+
+    .chip-pill.outlined {
+        background: transparent;
+        color: var(--ink-3);
+        border-color: var(--border);
+    }
+
+    /* ── CAREER — Transaction History ───────────────── */
+    #career { background: var(--bg); }
+
+    .ledger-header {
+        display: grid;
+        grid-template-columns: 36px 1fr 180px 120px;
+        gap: 1.5rem;
+        padding: 0.6rem 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ledger-col {
+        font-family: var(--mono);
+        font-size: 0.62rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+    }
+
+    .ledger-col.right { text-align: right; }
+
+    .ledger {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+    }
+
+    .ledger-row {
+        background: var(--white);
+        padding: 1.5rem 1.25rem;
+        display: grid;
+        grid-template-columns: 36px 1fr 180px 120px;
+        gap: 1.5rem;
+        align-items: start;
+        cursor: default;
+        transition: background 0.15s;
+    }
+
+    .ledger-row:hover { background: #FAFBFF; }
+
+    .ledger-row.active { background: #FAFAFF; border-left: 3px solid var(--accent); }
+
+    .ledger-indicator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding-top: 4px;
+    }
+
+    .ind-dot {
+        width: 10px; height: 10px;
+        border-radius: 50%;
+        background: var(--border);
+        border: 2px solid var(--border);
+        flex-shrink: 0;
+    }
+
+    .ledger-row.active .ind-dot {
+        background: var(--accent);
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px var(--acc-bg);
+    }
+
+    .ind-line {
+        width: 1px;
+        height: 100%;
+        background: var(--border);
+        flex: 1;
+        min-height: 20px;
+    }
+
+    .ledger-content {}
+
+    .ledger-company {
+        font-family: var(--sans);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+        margin-bottom: 0.2rem;
+    }
+
+    .ledger-role {
+        font-family: var(--sans);
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.3;
+        margin-bottom: 0.5rem;
+    }
+
+    .ledger-desc {
+        font-size: 0.85rem;
+        color: var(--ink-2);
+        line-height: 1.7;
+    }
+
+    .ledger-period {
+        font-family: var(--mono);
+        font-size: 0.75rem;
+        color: var(--ink-3);
+        text-align: right;
+        padding-top: 4px;
+    }
+
+    .ledger-status {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 4px;
+    }
+
+    .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        font-family: var(--mono);
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.25rem 0.6rem;
+        border-radius: 100px;
+        white-space: nowrap;
+    }
+
+    .badge-active {
+        background: var(--grn-bg);
+        color: var(--green);
+        border: 1px solid rgba(16,185,129,0.25);
+    }
+
+    .badge-settled {
+        background: var(--bg);
+        color: var(--ink-3);
+        border: 1px solid var(--border);
+    }
+
+    .badge-edu {
+        background: #FFF7ED;
+        color: #C2760C;
+        border: 1px solid rgba(194,118,12,0.2);
+    }
+
+    .badge-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+
+    /* ── EXPERTISE — Methods Supported ──────────────── */
+    #expertise { background: var(--white); }
+
+    .methods-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        margin-top: 2.5rem;
+    }
+
+    .method-card {
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        padding: 1.75rem;
+        background: var(--white);
+        transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+
+    .method-card:hover {
+        border-color: var(--accent);
+        box-shadow: 0 4px 24px rgba(99,91,255,0.1);
+        transform: translateY(-2px);
+    }
+
+    .method-id {
+        font-family: var(--mono);
+        font-size: 0.65rem;
+        color: var(--accent);
+        letter-spacing: 0.1em;
+        margin-bottom: 0.75rem;
+    }
+
+    .method-title {
+        font-family: var(--sans);
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.3;
+        margin-bottom: 0.6rem;
+    }
+
+    .method-desc {
+        font-size: 0.86rem;
+        color: var(--ink-2);
+        line-height: 1.75;
+    }
+
+    /* ── WRITING ─────────────────────────────────────── */
+    #writing { background: var(--bg); }
+
+    .writing-header-row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .writing-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .post-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        padding: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        transition: border-color 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+    }
+
+    .post-card:hover {
+        border-color: var(--accent);
+        box-shadow: 0 4px 24px rgba(99,91,255,0.08);
+    }
+
+    .post-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .post-cat {
+        font-family: var(--mono);
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+    }
+
+    .post-date {
+        font-family: var(--mono);
+        font-size: 0.62rem;
+        color: var(--ink-3);
+    }
+
+    .post-title {
+        font-family: var(--sans);
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.35;
+    }
+
+    .post-excerpt {
+        font-size: 0.86rem;
+        color: var(--ink-2);
+        line-height: 1.7;
+        flex: 1;
+    }
+
+    .post-link {
+        font-family: var(--mono);
+        font-size: 0.72rem;
+        color: var(--accent);
+        margin-top: auto;
+    }
+
+    /* ── PRESS ───────────────────────────────────────── */
+    #press { background: var(--white); }
+
+    .press-table {
+        margin-top: 2.5rem;
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+    }
+
+    .press-table-head {
+        display: grid;
+        grid-template-columns: 2.5rem 160px 1fr 2.5rem;
+        gap: 1rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .pt-col {
+        font-family: var(--mono);
+        font-size: 0.6rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+    }
+
+    .press-row {
+        display: grid;
+        grid-template-columns: 2.5rem 160px 1fr 2.5rem;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+        border-bottom: 1px solid var(--border);
+        background: var(--white);
+        align-items: center;
+        transition: background 0.15s;
+    }
+
+    .press-row:last-child { border-bottom: none; }
+    .press-row:hover { background: var(--bg); }
+
+    .pr-num {
+        font-family: var(--mono);
+        font-size: 0.72rem;
+        color: var(--ink-3);
+    }
+
+    .pr-outlet {
+        font-family: var(--mono);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-2);
+    }
+
+    .pr-title {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--ink);
+        line-height: 1.4;
+    }
+
+    .pr-arrow {
+        color: var(--ink-3);
+        font-size: 0.9rem;
+        transition: color 0.2s, transform 0.2s;
+        text-align: center;
+    }
+
+    .press-row:hover .pr-arrow { color: var(--accent); transform: translateX(3px); }
+
+    /* ── SPEAKING ────────────────────────────────────── */
+    #speaking { background: var(--bg); }
+
+    .speaking-grid {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr 1fr;
+        gap: 1.25rem;
+        margin-top: 2.5rem;
+    }
+
+    .speak-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+        transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .speak-card:hover {
+        box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        transform: translateY(-2px);
+    }
+
+    .speak-img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        display: block;
+    }
+
+    .speak-card:first-child .speak-img { aspect-ratio: 16/9; }
+
+    .speak-body {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .speak-event {
+        font-family: var(--mono);
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.4rem;
+    }
+
+    .speak-title {
+        font-family: var(--sans);
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.35;
+        margin-bottom: 0.5rem;
+    }
+
+    .speak-desc {
+        font-size: 0.82rem;
+        color: var(--ink-2);
+        line-height: 1.7;
+    }
+
+    /* ── VIDEOS ──────────────────────────────────────── */
+    #videos { background: var(--white); }
+
+    .video-tabs {
+        display: flex;
+        gap: 0;
+        border-bottom: 1px solid var(--border);
+        margin: 2rem 0 2rem;
+    }
+
+    .v-tab {
+        font-family: var(--body);
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--ink-3);
+        padding: 0.7rem 1.25rem;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -1px;
+        transition: color 0.2s, border-color 0.2s;
+    }
+
+    .v-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    .v-content { display: none; }
+    .v-content.active { display: block; }
+
+    .v-slider-clip { overflow: hidden; }
+
+    .v-track {
+        display: flex;
+        gap: 1.25rem;
+        transition: transform 0.35s ease;
+    }
+
+    .v-card {
+        min-width: 260px;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: var(--r);
+        overflow: hidden;
+        cursor: pointer;
+        flex-shrink: 0;
+        transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    .v-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(99,91,255,0.1);
+    }
+
+    .v-thumb {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: var(--border);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .v-play {
+        width: 38px; height: 38px;
+        border-radius: 50%;
+        background: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        color: var(--accent);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        transition: transform 0.2s;
+    }
+
+    .v-card:hover .v-play { transform: scale(1.1); }
+
+    .v-info { padding: 0.9rem 1rem; }
+
+    .v-ep {
+        font-family: var(--mono);
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.25rem;
+    }
+
+    .v-title {
+        font-family: var(--sans);
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--ink);
+        line-height: 1.3;
+        margin-bottom: 0.2rem;
+    }
+
+    .v-desc { font-size: 0.76rem; color: var(--ink-3); line-height: 1.55; }
+
+    .v-controls {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        align-items: center;
+    }
+
+    .v-btn {
+        width: 36px; height: 36px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: var(--white);
+        color: var(--ink-2);
+        font-size: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 0.2s, color 0.2s;
+    }
+
+    .v-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .v-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+    .v-cta { margin-top: 2rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .v-cta-text { font-size: 0.85rem; color: var(--ink-3); }
+
+    /* ── CONTACT ─────────────────────────────────────── */
+    #contact {
+        background:
+            radial-gradient(ellipse at 10% 60%, rgba(99,91,255,0.4) 0%, transparent 50%),
+            radial-gradient(ellipse at 85% 30%, rgba(16,185,129,0.18) 0%, transparent 50%),
+            var(--hero-bg);
+        padding: 100px 0;
+    }
+
+    #contact .section-wrap {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .contact-heading {
+        font-family: var(--sans);
+        font-size: clamp(2.5rem, 5vw, 5rem);
+        font-weight: 800;
+        color: white;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        margin-bottom: 1rem;
+    }
+
+    .contact-heading .accent-word { color: var(--accent); }
+
+    .contact-sub {
+        font-size: 1rem;
+        color: rgba(255,255,255,0.5);
+        line-height: 1.7;
+        max-width: 480px;
+    }
+
+    .btn-connect {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: var(--white);
+        color: var(--ink);
+        font-family: var(--sans);
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 100px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+        transition: transform 0.2s, box-shadow 0.2s;
+        white-space: nowrap;
+    }
+
+    .btn-connect:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+    }
+
+    /* ── FOOTER ──────────────────────────────────────── */
+    footer {
+        background: #040811;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        padding: 1.5rem clamp(1.5rem, 5vw, 5rem);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    footer p { font-family: var(--mono); font-size: 0.7rem; color: rgba(255,255,255,0.2); }
+
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-family: var(--mono); font-size: 0.7rem; color: rgba(255,255,255,0.3); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+
+    /* ── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 980px) {
+        .nav-links, .nav-cta { display: none; }
+        .nav-mobile-btn { display: flex; align-items: center; }
+
+        .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+        .card-scene { justify-content: flex-start; }
+        .payment-card { width: 320px; height: 200px; padding: 1.25rem 1.5rem; }
+        .card-pan { gap: 0.75rem; }
+
+        .metrics-row { grid-template-columns: repeat(2, 1fr); }
+        .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+        .methods-grid { grid-template-columns: repeat(2, 1fr); }
+        .writing-grid { grid-template-columns: 1fr; }
+        .speaking-grid { grid-template-columns: 1fr 1fr; }
+
+        .ledger-header { display: none; }
+        .ledger-row {
+            grid-template-columns: 36px 1fr;
+            grid-template-rows: auto auto;
+        }
+        .ledger-period, .ledger-status { display: none; }
+
+        #contact .section-wrap { grid-template-columns: 1fr; }
+
+        .press-table-head { display: none; }
+        .press-row { grid-template-columns: 2.5rem 1fr 2rem; }
+        .pr-outlet { display: none; }
+    }
+
+    @media (max-width: 640px) {
+        .metrics-row { grid-template-columns: 1fr 1fr; }
+        .methods-grid { grid-template-columns: 1fr; }
+        .speaking-grid { grid-template-columns: 1fr; }
+        .payment-card { width: 300px; height: 188px; }
+    }
+    </style>
+</head>
+<body>
+
+<!-- ── NAV ────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#home" class="nav-brand">
+            <div class="brand-mark">DG</div>
+            <span class="brand-name">Devang Gaur</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#speaking">Speaking</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Connect →</a>
+        <button class="nav-mobile-btn" id="nav-mb-btn">☰</button>
+    </div>
+</nav>
+<div class="mobile-drawer" id="mobile-drawer">
+    <a href="#about"     onclick="closeDrawer()">About</a>
+    <a href="#career"    onclick="closeDrawer()">Career</a>
+    <a href="#expertise" onclick="closeDrawer()">Expertise</a>
+    <a href="#writing"   onclick="closeDrawer()">Writing</a>
+    <a href="#press"     onclick="closeDrawer()">Press</a>
+    <a href="#speaking"  onclick="closeDrawer()">Speaking</a>
+    <a href="#videos"    onclick="closeDrawer()">Videos</a>
+    <a href="#contact"   onclick="closeDrawer()">Contact</a>
+    <a href="https://www.linkedin.com/in/devang-gaur/" target="_blank">LinkedIn ↗</a>
+</div>
+
+<!-- ── HERO ───────────────────────────────────────────── -->
+<section id="home">
+    <div class="hero-grid">
+        <div>
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                ACTIVE · PM @ GOOGLE PAYMENTS
+            </div>
+            <h1 class="hero-name">
+                Devang<br>
+                <span class="accent-word">Gaur.</span>
+            </h1>
+            <p class="hero-sub">
+                Building the payment platform behind <strong>YouTube</strong>, <strong>Google Play</strong>, and <strong>Google Store</strong>. I turn complex checkout infrastructure into seamless consumer experiences at Google scale.
+            </p>
+            <div class="hero-actions">
+                <a href="#writing" class="btn-primary">Read My Blog</a>
+                <a href="https://www.linkedin.com/in/devang-gaur/" target="_blank" class="btn-outline-light">LinkedIn ↗</a>
+                <a href="index.html" class="btn-outline-light">Classic Site</a>
+            </div>
+            <div class="hero-logos">
+                <span class="hero-logos-label">Previously at</span>
+                <img src="adobe-logo.png" alt="Adobe">
+                <img src="paypal-logo.png" alt="PayPal">
+                <img src="dell-logo.png" alt="Dell">
+            </div>
+        </div>
+
+        <!-- 3D Payment Card -->
+        <div class="card-scene">
+            <div class="payment-card" id="hero-card">
+                <div class="card-row-top">
+                    <div class="chip"></div>
+                    <div class="card-logo-wrap">
+                        <img src="google-logo.png" alt="Google" class="card-google-logo">
+                        <span class="card-brand-text">PAYMENTS</span>
+                    </div>
+                </div>
+                <div class="card-pan">
+                    <span class="pan-role">PM · GOOGLE</span>
+                    <span>·</span>
+                    <span>PAYMENTS</span>
+                    <span>·</span>
+                    <span>2025</span>
+                </div>
+                <div class="card-row-bottom">
+                    <div class="card-field">
+                        <div class="card-field-label">Card Holder</div>
+                        <div class="card-field-value">DEVANG GAUR</div>
+                    </div>
+                    <div class="card-field">
+                        <div class="card-field-label">Alumni</div>
+                        <div class="card-field-value small">CARNEGIE MELLON</div>
+                    </div>
+                    <div class="card-circles">
+                        <div class="card-circle cc1"></div>
+                        <div class="card-circle cc2"></div>
+                    </div>
+                </div>
+                <div class="card-approved-badge">✓ APPROVED</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── ABOUT ──────────────────────────────────────────── -->
+<section id="about" class="light">
+    <div class="section-wrap">
+        <div class="eyebrow">01 · About</div>
+
+        <div class="metrics-row">
+            <div class="metric-tile">
+                <div class="metric-num">$40<span class="metric-unit">M+</span></div>
+                <div class="metric-label">Revenue impact across roles</div>
+            </div>
+            <div class="metric-tile">
+                <div class="metric-num">9<span class="metric-unit">+ yrs</span></div>
+                <div class="metric-label">In payments product</div>
+            </div>
+            <div class="metric-tile">
+                <div class="metric-num">15<span class="metric-unit">+</span></div>
+                <div class="metric-label">Global markets served</div>
+            </div>
+            <div class="metric-tile">
+                <div class="metric-num">23</div>
+                <div class="metric-label">Payment education videos</div>
+            </div>
+        </div>
+
+        <div class="about-grid">
+            <div>
+                <h2 class="about-statement">
+                    Building payments<br>
+                    that <span class="highlight">billions</span> of<br>
+                    people trust daily.
+                </h2>
+            </div>
+            <div class="about-detail">
+                <p>
+                    At <strong>Google</strong>, I'm part of the Payments organization building the consumer platform that powers YouTube, Google Play, and Google Store. My team owns the buyflow infrastructure — the critical path from "tap to pay" to completed transaction.
+                </p>
+                <p>
+                    We build two core platform capabilities. <strong>Full Buyflow</strong> is a hosted checkout that handles product details, payment method selection, legal messaging, and completion. <strong>Lite Buyflow</strong> is a lightweight embedded integration where the product team controls parts of the experience.
+                </p>
+                <p>
+                    Before Google, I drove payment innovation at <strong>Adobe</strong> — ML platforms, global expansion — and at <strong>PayPal</strong>, building fraud detection systems processing billions in annual volume.
+                </p>
+                <div class="capability-chips">
+                    <span class="chip-pill">Full Buyflow</span>
+                    <span class="chip-pill">Lite Buyflow</span>
+                    <span class="chip-pill">Platform Capabilities</span>
+                    <span class="chip-pill outlined">First-Party Scale</span>
+                    <span class="chip-pill outlined">Consumer Checkout</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CAREER — Transaction History ───────────────────── -->
+<section id="career" class="tinted">
+    <div class="section-wrap">
+        <div class="eyebrow">02 · Career</div>
+        <h2 class="section-heading" style="margin-bottom:2.5rem">Transaction History</h2>
+
+        <div class="ledger-header">
+            <span class="ledger-col"></span>
+            <span class="ledger-col">Company / Role</span>
+            <span class="ledger-col right">Period</span>
+            <span class="ledger-col right">Status</span>
+        </div>
+        <div class="ledger">
+            <div class="ledger-row active">
+                <div class="ledger-indicator">
+                    <div class="ind-dot"></div>
+                    <div class="ind-line"></div>
+                </div>
+                <div class="ledger-content">
+                    <div class="ledger-company">Google</div>
+                    <div class="ledger-role">Product Manager, Payments</div>
+                    <p class="ledger-desc">Building Google's consumer payments platform and buyflow infrastructure for YouTube, Google Play, and Google Store. Owning Full Buyflow and Lite Buyflow platform capabilities at global scale.</p>
+                </div>
+                <div class="ledger-period">2025 — Present</div>
+                <div class="ledger-status">
+                    <span class="status-badge badge-active"><span class="badge-dot"></span> Active</span>
+                </div>
+            </div>
+            <div class="ledger-row">
+                <div class="ledger-indicator">
+                    <div class="ind-dot"></div>
+                    <div class="ind-line"></div>
+                </div>
+                <div class="ledger-content">
+                    <div class="ledger-company">Adobe</div>
+                    <div class="ledger-role">Senior Product Manager, Payments</div>
+                    <p class="ledger-desc">Pioneered ML platforms for payment optimization. Expanded operations across global markets. Drove $40M+ revenue impact through AI-powered retry strategies, authorization intelligence, and PSD2 compliance.</p>
+                </div>
+                <div class="ledger-period">Previous</div>
+                <div class="ledger-status">
+                    <span class="status-badge badge-settled"><span class="badge-dot"></span> Settled</span>
+                </div>
+            </div>
+            <div class="ledger-row">
+                <div class="ledger-indicator">
+                    <div class="ind-dot"></div>
+                    <div class="ind-line"></div>
+                </div>
+                <div class="ledger-content">
+                    <div class="ledger-company">PayPal</div>
+                    <div class="ledger-role">Product Manager, Risk &amp; Fraud</div>
+                    <p class="ledger-desc">Architected real-time fraud detection systems processing billions in annual volume. Built ML-powered risk scoring and implemented 3DS2 authentication compliance across multiple markets.</p>
+                </div>
+                <div class="ledger-period">Previous</div>
+                <div class="ledger-status">
+                    <span class="status-badge badge-settled"><span class="badge-dot"></span> Settled</span>
+                </div>
+            </div>
+            <div class="ledger-row">
+                <div class="ledger-indicator">
+                    <div class="ind-dot"></div>
+                    <div class="ind-line"></div>
+                </div>
+                <div class="ledger-content">
+                    <div class="ledger-company">Dell Technologies</div>
+                    <div class="ledger-role">Product Manager</div>
+                    <p class="ledger-desc">Revamped checkout and payment experiences. Generated millions in incremental revenue through conversion optimization and payment friction reduction across enterprise and consumer segments.</p>
+                </div>
+                <div class="ledger-period">Previous</div>
+                <div class="ledger-status">
+                    <span class="status-badge badge-settled"><span class="badge-dot"></span> Settled</span>
+                </div>
+            </div>
+            <div class="ledger-row">
+                <div class="ledger-indicator">
+                    <div class="ind-dot"></div>
+                </div>
+                <div class="ledger-content">
+                    <div class="ledger-company">Carnegie Mellon University</div>
+                    <div class="ledger-role">Graduate Studies</div>
+                    <p class="ledger-desc">Graduate education at one of the world's leading technology and engineering institutions.</p>
+                </div>
+                <div class="ledger-period">Education</div>
+                <div class="ledger-status">
+                    <span class="status-badge badge-edu"><span class="badge-dot"></span> Alumni</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EXPERTISE — Methods Supported ──────────────────── -->
+<section id="expertise" class="light">
+    <div class="section-wrap">
+        <div class="eyebrow">03 · Expertise</div>
+        <h2 class="section-heading">Methods Supported</h2>
+        <div class="methods-grid">
+            <div class="method-card">
+                <div class="method-id">AUTH-01</div>
+                <div class="method-title">Authorization Intelligence</div>
+                <p class="method-desc">ML-powered authorization optimization, network token implementation (Visa NTI, Mastercard TRACE ID), and intelligent retry strategies that recover declined transactions.</p>
+            </div>
+            <div class="method-card">
+                <div class="method-id">AGNT-02</div>
+                <div class="method-title">Agentic Payment Systems</div>
+                <p class="method-desc">Autonomous payment workflows with AI agents making intelligent routing and processing decisions — reducing latency and operational overhead at scale.</p>
+            </div>
+            <div class="method-card">
+                <div class="method-id">RISK-03</div>
+                <div class="method-title">AI-Powered Risk Management</div>
+                <p class="method-desc">Real-time fraud detection, predictive risk scoring, and ML models trained on billions in payment volume to protect consumers with minimal false positive friction.</p>
+            </div>
+            <div class="method-card">
+                <div class="method-id">OPT-04</div>
+                <div class="method-title">Payment Optimization</div>
+                <p class="method-desc">Data-driven routing algorithms, compliance automation (PSD2, 3DS2), and payment chain architecture designed to maximize every basis point of approval rate.</p>
+            </div>
+            <div class="method-card">
+                <div class="method-id">TOKN-05</div>
+                <div class="method-title">Stored Credentials &amp; Tokenization</div>
+                <p class="method-desc">Card-on-file compliance frameworks, secure credential storage, and network tokenization strategies for recurring and subscription commerce.</p>
+            </div>
+            <div class="method-card">
+                <div class="method-id">GLOB-06</div>
+                <div class="method-title">Global Payment Infrastructure</div>
+                <p class="method-desc">Local payment methods (UPI, PIX, iDEAL, WeChat Pay), cross-border optimization, and multi-gateway orchestration across 15+ markets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── WRITING ─────────────────────────────────────────── -->
+<section id="writing" class="tinted">
+    <div class="section-wrap">
+        <div class="eyebrow">04 · Writing</div>
+        <div class="writing-header-row">
+            <h2 class="section-heading">Product Insights</h2>
+        </div>
+        <div class="writing-grid">
+            <a href="blog/virality-part-2.html" class="post-card">
+                <div class="post-meta"><span class="post-cat">Products</span><span class="post-date">Sep 15, 2021</span></div>
+                <div class="post-title">Virality is Not Born, It Is Made: Part 2 | Minting Social Currency</div>
+                <p class="post-excerpt">How companies design products to become viral through social currency — intrinsic peculiarity, game mechanics, and insiders.</p>
+                <span class="post-link">Read More →</span>
+            </a>
+            <a href="blog/virality-part-1.html" class="post-card">
+                <div class="post-meta"><span class="post-cat">Design</span><span class="post-date">Sep 7, 2021</span></div>
+                <div class="post-title">Virality is Not Born, It Is Made: Part 1</div>
+                <p class="post-excerpt">Jonah Berger's STEPPS framework and how products achieve viral success through strategic design, not accident.</p>
+                <span class="post-link">Read More →</span>
+            </a>
+            <a href="blog/spotify-tribe-model.html" class="post-card">
+                <div class="post-meta"><span class="post-cat">Culture</span><span class="post-date">Aug 2, 2021</span></div>
+                <div class="post-title">Spotify | Tribe Engineering Model</div>
+                <p class="post-excerpt">Spotify's squads, tribes, chapters, and guilds — an organizational structure built for shipping at scale without losing alignment.</p>
+                <span class="post-link">Read More →</span>
+            </a>
+            <a href="blog/disruptive-innovation.html" class="post-card">
+                <div class="post-meta"><span class="post-cat">Products</span><span class="post-date">Jul 4, 2021</span></div>
+                <div class="post-title">What is 'Disruptive Innovation'?</div>
+                <p class="post-excerpt">The commonly misunderstood concept of disruptive innovation — what it actually means using Tesla as a case study.</p>
+                <span class="post-link">Read More →</span>
+            </a>
+            <a href="blog/mvp-vs-mlp.html" class="post-card">
+                <div class="post-meta"><span class="post-cat">Products</span><span class="post-date">Jun 18, 2021</span></div>
+                <div class="post-title">Is Minimum Viable Product, Viable Anymore?</div>
+                <p class="post-excerpt">Why traditional MVP is losing ground and why Minimum Lovable Product is a better framework for competitive markets.</p>
+                <span class="post-link">Read More →</span>
+            </a>
+            <a href="blog/user-behavior.html" class="post-card">
+                <div class="post-meta"><span class="post-cat">Products</span><span class="post-date">Jun 5, 2021</span></div>
+                <div class="post-title">What Drives User Behavior?</div>
+                <p class="post-excerpt">Prof. B.J. Fogg's behavior model (B = MAT) and how tech companies leverage psychology to build habit-forming products.</p>
+                <span class="post-link">Read More →</span>
+            </a>
+            <a href="blog/manipulation-matrix.html" class="post-card">
+                <div class="post-meta"><span class="post-cat">Products</span><span class="post-date">Jun 1, 2021</span></div>
+                <div class="post-title">Manipulation Matrix | Assessing Habit Forming Products</div>
+                <p class="post-excerpt">Nir Eyal's Manipulation Matrix through Flappy Bird — the ethics of building products that form habits.</p>
+                <span class="post-link">Read More →</span>
+            </a>
+            <a href="blog/why-products-fail.html" class="post-card">
+                <div class="post-meta"><span class="post-cat">Products</span><span class="post-date">May 14, 2021</span></div>
+                <div class="post-title">Why Do Products Fail?</div>
+                <p class="post-excerpt">The painkiller vs vitamin framework — why people say they want vitamins but pay for painkillers, and what it means for building.</p>
+                <span class="post-link">Read More →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ── PRESS ───────────────────────────────────────────── -->
+<section id="press" class="light">
+    <div class="section-wrap">
+        <div class="eyebrow">05 · Press &amp; Publications</div>
+        <h2 class="section-heading">Thought Leadership</h2>
+        <div class="press-table">
+            <div class="press-table-head">
+                <span class="pt-col">#</span>
+                <span class="pt-col">Outlet</span>
+                <span class="pt-col">Article</span>
+                <span class="pt-col"></span>
+            </div>
+            <a class="press-row" href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/card-on-file-done-right-how-to-stay-compliant-with-the-stored-credential-mandate" target="_blank">
+                <span class="pr-num">01</span>
+                <span class="pr-outlet">Merchant Risk Council</span>
+                <span class="pr-title">Card-on-File Done Right: How to Stay Compliant with the Stored Credential Mandate</span>
+                <span class="pr-arrow">→</span>
+            </a>
+            <a class="press-row" href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/boosting-authorization-success-a-practical-guide-to-visa-nti-and-mastercard-trace-id-mandates" target="_blank">
+                <span class="pr-num">02</span>
+                <span class="pr-outlet">Merchant Risk Council</span>
+                <span class="pr-title">Boosting Authorization Success: A Practical Guide to Visa NTI and Mastercard TRACE ID Mandates</span>
+                <span class="pr-arrow">→</span>
+            </a>
+            <a class="press-row" href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/building-a-trusted-payment-chain" target="_blank">
+                <span class="pr-num">03</span>
+                <span class="pr-outlet">Merchant Risk Council</span>
+                <span class="pr-title">Building a Trusted Payment Chain</span>
+                <span class="pr-arrow">→</span>
+            </a>
+            <a class="press-row" href="https://thepaypers.com/payments/expert-views/from-optimisation-to-autonomy-building-the-data-foundations-for-agentic-payments" target="_blank">
+                <span class="pr-num">04</span>
+                <span class="pr-outlet">The Paypers</span>
+                <span class="pr-title">From Optimisation to Autonomy: Building the Data Foundations for Agentic Payments</span>
+                <span class="pr-arrow">→</span>
+            </a>
+            <a class="press-row" href="https://www.techtimes.com/articles/310910/20250619/beyond-failure-point-how-devang-gaur-making-ecommerce-payments-workintelligently.htm" target="_blank">
+                <span class="pr-num">05</span>
+                <span class="pr-outlet">TechTimes</span>
+                <span class="pr-title">Beyond the Failure Point: How Devang Gaur is Making eCommerce Payments Work Intelligently</span>
+                <span class="pr-arrow">→</span>
+            </a>
+            <a class="press-row" href="https://financefeeds.com/the-future-of-payment-optimization-how-devang-gaur-is-using-ai-to-make-every-transaction-count" target="_blank">
+                <span class="pr-num">06</span>
+                <span class="pr-outlet">FinanceFeeds</span>
+                <span class="pr-title">The Future of Payment Optimization: How Devang Gaur is Using AI to Make Every Transaction Count</span>
+                <span class="pr-arrow">→</span>
+            </a>
+            <a class="press-row" href="https://www.inverse.com/tech/regulation-as-advantage-how-devang-gaur-turns-compliance-into-a-growth-strategy" target="_blank">
+                <span class="pr-num">07</span>
+                <span class="pr-outlet">Inverse</span>
+                <span class="pr-title">Regulation as Advantage: How Devang Gaur Turns Compliance into a Growth Strategy</span>
+                <span class="pr-arrow">→</span>
+            </a>
+            <a class="press-row" href="https://apple.news/ArQgyB2tkQ_qRirgCgd3Z_g" target="_blank">
+                <span class="pr-num">08</span>
+                <span class="pr-outlet">Apple News</span>
+                <span class="pr-title">Featured Article on Payment Innovation</span>
+                <span class="pr-arrow">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ── SPEAKING ────────────────────────────────────────── -->
+<section id="speaking" class="tinted">
+    <div class="section-wrap">
+        <div class="eyebrow">06 · Speaking</div>
+        <h2 class="section-heading" style="margin-bottom:2.5rem">Industry Recognition</h2>
+        <div class="speaking-grid">
+            <div class="speak-card">
+                <img src="Pictures/Industry Conferences/mrc1.jpeg" alt="Merchant Risk Council" class="speak-img">
+                <div class="speak-body">
+                    <div class="speak-event">Merchant Risk Council</div>
+                    <div class="speak-title">Payment Innovation &amp; Risk Management</div>
+                    <p class="speak-desc">Presented on payment optimization strategies, involuntary churn reduction, and the impact of payment failures on customer experience and business KPIs.</p>
+                </div>
+            </div>
+            <div class="speak-card">
+                <img src="Pictures/Industry Conferences/pls2.jpeg" alt="Payments Leadership Summit" class="speak-img">
+                <div class="speak-body">
+                    <div class="speak-event">Payments Leadership Summit</div>
+                    <div class="speak-title">Panel: Future of Payment Technology</div>
+                    <p class="speak-desc">Expert panel on AI-powered optimization, network tokens, and emerging payment technologies reshaping the industry.</p>
+                </div>
+            </div>
+            <div class="speak-card">
+                <img src="Pictures/Industry Conferences/pls3.jpeg" alt="Industry Conference" class="speak-img">
+                <div class="speak-body">
+                    <div class="speak-event">Industry Conference</div>
+                    <div class="speak-title">Payment Compliance &amp; Global Expansion</div>
+                    <p class="speak-desc">Insights on compliance mandates, local payment methods, and scaling payment operations globally.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── VIDEOS ──────────────────────────────────────────── -->
+<section id="videos" class="light">
+    <div class="section-wrap">
+        <div class="eyebrow">07 · Payment Education</div>
+        <h2 class="section-heading">23 Videos on How Money Moves</h2>
+        <div class="video-tabs">
+            <div class="v-tab active" onclick="switchVTab('lod', this)">Life of a Dollar — 18 Episodes</div>
+            <div class="v-tab" onclick="switchVTab('lpm', this)">Local Payment Methods — 5 Episodes</div>
+        </div>
+
+        <div class="v-content active" id="vc-lod">
+            <div class="v-slider-clip">
+                <div class="v-track" id="vt-lod">
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7279902764267151360','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep0.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Launch</div><div class="v-title">Introduction</div><p class="v-desc">The journey of a dollar through the modern payment system.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7281036490203586561','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep1.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 1</div><div class="v-title">How a Payment Works</div><p class="v-desc">End-to-end flow from swipe to settlement.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7282450025297281025','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep2.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 2</div><div class="v-title">Payment Networks</div><p class="v-desc">The role of Visa, Mastercard, and other networks.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7283900254601056256','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep3.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 3</div><div class="v-title">Interchange Fees</div><p class="v-desc">Who gets paid what in every transaction.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7285363533210759168','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep4.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 4</div><div class="v-title">Authorization vs Settlement</div><p class="v-desc">Why these are two distinct events.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7286828003263705088','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep5.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 5</div><div class="v-title">Chargebacks</div><p class="v-desc">How chargebacks work and why they matter to merchants.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7288265455736729601','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep6.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 6</div><div class="v-title">Payment Processors</div><p class="v-desc">What processors do and how they fit in the ecosystem.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7289703095695458304','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep7.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 7</div><div class="v-title">3D Secure Authentication</div><p class="v-desc">How 3DS2 protects online transactions.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7291141069284773889','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep8.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 8</div><div class="v-title">Network Tokens</div><p class="v-desc">How tokenization improves security and auth rates.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7292556059050225664','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep9.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 9</div><div class="v-title">Payment Decline Codes</div><p class="v-desc">What decline codes mean and how to recover revenue.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7294003498427670528','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep10.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 10</div><div class="v-title">Stored Credentials</div><p class="v-desc">Card-on-file frameworks and compliance rules.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7295442083151011840','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep11.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 11</div><div class="v-title">PSD2 &amp; Strong Customer Auth</div><p class="v-desc">Europe's payment regulation and global impact.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7296883720882532352','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep12.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 12</div><div class="v-title">Gateway vs Processor</div><p class="v-desc">The difference and when you need each.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7297208173323595776','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep13.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 13</div><div class="v-title">Fraud Detection Basics</div><p class="v-desc">How systems flag suspicious transactions in real time.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7298348205350563840','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep14.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 14</div><div class="v-title">Subscription Payments</div><p class="v-desc">How recurring billing models work in payments.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7295442083151011840','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep15.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 15</div><div class="v-title">CVV Security Code</div><p class="v-desc">The role of CVV in protecting against payment fraud.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7297208173323595776','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep17.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 16</div><div class="v-title">Card Testing Fraud</div><p class="v-desc">How fraudsters test stolen cards and how to defend.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7298348205350563840','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/life of a dollar/Ep17.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 17</div><div class="v-title">The Durbin Amendment</div><p class="v-desc">Impact on debit card interchange fees.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="v-controls">
+                <button class="v-btn" id="lod-p" onclick="slideV4('lod',-1)">‹</button>
+                <button class="v-btn" id="lod-n" onclick="slideV4('lod',1)">›</button>
+            </div>
+        </div>
+
+        <div class="v-content" id="vc-lpm">
+            <div class="v-slider-clip">
+                <div class="v-track" id="vt-lpm">
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7310154333046652929','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/lpms/Ep1.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 1</div><div class="v-title">Intro to Local Payment Methods</div><p class="v-desc">Why local methods matter for global payments.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7311235602958430208','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/lpms/Ep2.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 2</div><div class="v-title">India — UPI</div><p class="v-desc">How UPI revolutionized digital payments in India.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7312866351516160001','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/lpms/Ep3.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 3</div><div class="v-title">Brazil — PIX</div><p class="v-desc">Brazil's instant payment system and its rise.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7313953544896761856','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/lpms/Ep4.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 4</div><div class="v-title">Netherlands — iDEAL</div><p class="v-desc">The Dutch banking method dominating e-commerce.</p></div>
+                    </div>
+                    <div class="v-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7316135993806360577','_blank')">
+                        <div class="v-thumb" style="background-image:url('thumbnails/lpms/Ep5.png')"><div class="v-play">▶</div></div>
+                        <div class="v-info"><div class="v-ep">Ep 5</div><div class="v-title">China — WeChat Pay</div><p class="v-desc">WeChat Pay's dominance in China's mobile ecosystem.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="v-controls">
+                <button class="v-btn" id="lpm-p" onclick="slideV4('lpm',-1)">‹</button>
+                <button class="v-btn" id="lpm-n" onclick="slideV4('lpm',1)">›</button>
+            </div>
+        </div>
+
+        <div class="v-cta">
+            <span class="v-cta-text">View all 23 videos on LinkedIn</span>
+            <a href="https://www.linkedin.com/in/devang-gaur/recent-activity/videos/" target="_blank" class="btn-primary">Visit LinkedIn ↗</a>
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT ─────────────────────────────────────────── -->
+<section id="contact">
+    <div class="section-wrap">
+        <div>
+            <h2 class="contact-heading">
+                Let's build<br>
+                <span class="accent-word">payments</span><br>
+                together.
+            </h2>
+            <p class="contact-sub">
+                I speak on AI/ML in payments, product strategy, and risk management. Open to speaking invitations, collaborations, and conversations with people building at the frontier of payments.
+            </p>
+        </div>
+        <a href="https://www.linkedin.com/in/devang-gaur/" target="_blank" class="btn-connect">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Connect on LinkedIn
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Devang Gaur · All rights reserved.</p>
+    <div class="footer-links">
+        <a href="index.html">Classic</a>
+        <a href="index-v2.html">V2</a>
+        <a href="index-v3.html">V3</a>
+        <a href="index-v5.html">V5</a>
+    </div>
+</footer>
+
+<script>
+    // Nav transparency on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile drawer
+    document.getElementById('nav-mb-btn').addEventListener('click', () => {
+        document.getElementById('mobile-drawer').classList.toggle('open');
+    });
+    function closeDrawer() { document.getElementById('mobile-drawer').classList.remove('open'); }
+
+    // 3D card tilt on mousemove
+    const card = document.getElementById('hero-card');
+    if (card) {
+        card.addEventListener('mousemove', e => {
+            const rect = card.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width  - 0.5) * 16;
+            const y = ((e.clientY - rect.top)  / rect.height - 0.5) * -10;
+            card.style.transform = `perspective(1200px) rotateX(${y + 4}deg) rotateY(${x - 10}deg) rotateZ(0.5deg)`;
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1200px) rotateX(8deg) rotateY(-14deg) rotateZ(1deg)';
+        });
+    }
+
+    // Video tabs
+    function switchVTab(id, el) {
+        document.querySelectorAll('.v-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.v-content').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+        document.getElementById('vc-' + id).classList.add('active');
+        vState[id].idx = 0;
+        document.getElementById('vt-' + id).style.transform = 'translateX(0)';
+        syncVBtns(id);
+    }
+
+    // Video slider
+    const vState = {
+        lod: { idx: 0, cw: 260, gap: 20 },
+        lpm: { idx: 0, cw: 260, gap: 20 }
+    };
+
+    function slideV4(id, dir) {
+        const s = vState[id];
+        const track = document.getElementById('vt-' + id);
+        const max = Math.max(0, track.querySelectorAll('.v-card').length - 4);
+        s.idx = Math.max(0, Math.min(s.idx + dir, max));
+        track.style.transform = `translateX(-${s.idx * (s.cw + s.gap)}px)`;
+        syncVBtns(id);
+    }
+
+    function syncVBtns(id) {
+        const s = vState[id];
+        const max = Math.max(0, document.getElementById('vt-' + id).querySelectorAll('.v-card').length - 4);
+        document.getElementById(id + '-p').disabled = s.idx === 0;
+        document.getElementById(id + '-n').disabled = s.idx >= max;
+    }
+
+    syncVBtns('lod');
+    syncVBtns('lpm');
+
+    // Analytics
+    window.addEventListener('DOMContentLoaded', () => {
+        const milestones = [25, 50, 75, 100];
+        const tracked = new Set();
+        window.addEventListener('scroll', () => {
+            const pct = Math.round(window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100);
+            milestones.forEach(m => {
+                if (pct >= m && !tracked.has(m)) {
+                    tracked.add(m);
+                    gtag('event', 'scroll_depth', { event_category: 'Engagement', event_label: m + '%', value: m });
+                }
+            });
+        });
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            if (!link.href.includes(window.location.hostname)) {
+                link.addEventListener('click', () => gtag('event', 'click', { event_category: 'External Link', event_label: link.href }));
+            }
+        });
+    });
+</script>
+</body>
+</html>

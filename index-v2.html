@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2KVE5Y7EP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2KVE5Y7EP');
+    </script>
+
+    <!-- Hotjar Tracking Code -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:6612265,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devang Gaur — Product Manager at Google Payments</title>
+    <meta name="description" content="Devang Gaur is a Product Manager at Google on the Payments team, building consumer payment platforms for YouTube, Google Play, and Google Store. Previously at Adobe and PayPal.">
+    <meta name="keywords" content="Devang Gaur, Product Manager, Google, Payments, YouTube, Google Play, Google Store, Adobe, PayPal, Payment Platform, Buyflow, Carnegie Mellon">
+    <meta name="author" content="Devang Gaur">
+    <link rel="canonical" href="https://devanggaur.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devanggaur.com/">
+    <meta property="og:title" content="Devang Gaur — Product Manager at Google Payments">
+    <meta property="og:description" content="Product Manager at Google building consumer payment platforms for YouTube, Google Play, and Google Store.">
+    <meta property="og:image" content="https://devanggaur.com/Pictures/Headshots/devang_gaur_hs.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Devang Gaur — Product Manager at Google Payments">
+    <meta property="twitter:description" content="Product Manager at Google building consumer payment platforms for YouTube, Google Play, and Google Store.">
+    <meta property="twitter:image" content="https://devanggaur.com/Pictures/Headshots/devang_gaur_hs.png">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Variables ─────────────────────────────────── */
+        :root {
+            --bg:           #F9F8F5;
+            --surface:      #FFFFFF;
+            --ink:          #111111;
+            --ink-mid:      #444444;
+            --ink-muted:    #888888;
+            --border:       #E4E3DE;
+            --accent:       #4285F4;
+            --accent-bg:    #EBF1FD;
+            --accent-dark:  #1A56D6;
+            --sidebar-w:    210px;
+            --section-pad:  100px;
+            --radius:       12px;
+            --serif:        'Fraunces', Georgia, serif;
+            --sans:         'Inter', -apple-system, sans-serif;
+        }
+
+        /* ── Reset ──────────────────────────────────────── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a { color: inherit; text-decoration: none; }
+        img { display: block; max-width: 100%; }
+
+        /* ── Sidebar ────────────────────────────────────── */
+        .sidebar {
+            position: fixed;
+            top: 0; left: 0;
+            width: var(--sidebar-w);
+            height: 100vh;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 1.5rem;
+            z-index: 100;
+        }
+
+        .sidebar-logo {
+            margin-bottom: 3rem;
+        }
+
+        .monogram {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: var(--ink);
+            color: white;
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar-nav {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+        }
+
+        .sidebar-nav a {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--ink-muted);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: color 0.2s, background 0.2s;
+            letter-spacing: 0.01em;
+        }
+
+        .sidebar-nav a:hover {
+            color: var(--ink);
+            background: var(--bg);
+        }
+
+        .sidebar-nav a.active {
+            color: var(--accent);
+            background: var(--accent-bg);
+            font-weight: 600;
+        }
+
+        .sidebar-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .sidebar-footer a {
+            font-size: 0.78rem;
+            color: var(--ink-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s;
+        }
+
+        .sidebar-footer a:hover { color: var(--accent); }
+
+        .sidebar-footer .li-icon {
+            width: 16px;
+            height: 16px;
+            background: #0A66C2;
+            border-radius: 3px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+        /* ── Mobile Header ──────────────────────────────── */
+        .mobile-header {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 56px;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.25rem;
+            z-index: 200;
+        }
+
+        .mobile-monogram {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: 0.9rem;
+            background: var(--ink);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.35rem 0.6rem;
+            font-size: 1rem;
+            cursor: pointer;
+            color: var(--ink);
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 56px; left: 0; right: 0;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 1.25rem;
+            z-index: 199;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .mobile-nav.open { display: flex; }
+
+        .mobile-nav a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--ink-mid);
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .mobile-nav a:last-child { border-bottom: none; }
+
+        /* ── Page Wrap ──────────────────────────────────── */
+        .page-wrap {
+            margin-left: var(--sidebar-w);
+        }
+
+        /* ── Section Chrome ─────────────────────────────── */
+        section {
+            padding: var(--section-pad) clamp(2rem, 6vw, 6rem);
+        }
+
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+            margin-bottom: 2.5rem;
+        }
+
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .section-title {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 3.5vw, 3rem);
+            font-weight: 600;
+            line-height: 1.15;
+            color: var(--ink);
+        }
+
+        /* ── Hero ───────────────────────────────────────── */
+        #home {
+            background: var(--surface);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 5rem;
+            align-items: center;
+            max-width: 1100px;
+        }
+
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-bg);
+            color: var(--accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            padding: 0.35rem 0.75rem;
+            border-radius: 100px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-label-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .hero-name {
+            font-family: var(--serif);
+            font-size: clamp(4rem, 8vw, 8.5rem);
+            font-weight: 700;
+            line-height: 0.95;
+            color: var(--ink);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-name em {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--accent);
+        }
+
+        .hero-tagline {
+            font-size: clamp(1rem, 1.8vw, 1.2rem);
+            color: var(--ink-mid);
+            line-height: 1.6;
+            max-width: 520px;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 3.5rem;
+        }
+
+        .btn-solid {
+            background: var(--ink);
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.15s;
+        }
+
+        .btn-solid:hover {
+            background: var(--accent);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--ink);
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            transition: border-color 0.2s, color 0.2s, transform 0.15s;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--ink);
+            transform: translateY(-1px);
+        }
+
+        .hero-logos {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-logos-label {
+            font-size: 0.72rem;
+            font-weight: 500;
+            color: var(--ink-muted);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .hero-logos img {
+            height: 22px;
+            width: auto;
+            opacity: 0.55;
+            filter: grayscale(1);
+            transition: opacity 0.2s, filter 0.2s;
+        }
+
+        .hero-logos img:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+
+        /* Hero Photo */
+        .hero-photo-wrap {
+            position: relative;
+        }
+
+        .hero-photo-bg {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 85%;
+            height: 85%;
+            background: var(--accent-bg);
+            border-radius: var(--radius);
+            z-index: 0;
+        }
+
+        .hero-photo {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            object-position: top;
+            border-radius: var(--radius);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+
+        .hero-chip {
+            position: absolute;
+            z-index: 2;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 0.4rem 0.9rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--ink);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-chip img {
+            height: 16px;
+            width: auto;
+        }
+
+        .chip-google {
+            bottom: 40px;
+            left: -30px;
+        }
+
+        .chip-cmu {
+            top: 30px;
+            left: -40px;
+        }
+
+        /* ── About ──────────────────────────────────────── */
+        #about {
+            background: var(--bg);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            margin-top: 1rem;
+        }
+
+        .about-statement {
+            font-family: var(--serif);
+            font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--ink);
+        }
+
+        .about-statement em {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--accent);
+        }
+
+        .about-detail p {
+            font-size: 1rem;
+            color: var(--ink-mid);
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+
+        .about-detail p:last-child { margin-bottom: 0; }
+
+        .about-detail strong { color: var(--ink); font-weight: 600; }
+
+        .buyflow-pills {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .buyflow-pill {
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 0.4rem 0.9rem;
+            border-radius: 100px;
+            border: 1.5px solid var(--border);
+            color: var(--ink-mid);
+        }
+
+        .buyflow-pill.primary {
+            background: var(--accent-bg);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* ── Career Timeline ────────────────────────────── */
+        #career {
+            background: var(--surface);
+        }
+
+        .timeline {
+            position: relative;
+            margin-top: 1rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 8px;
+            bottom: 0;
+            width: 1px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 2rem;
+            padding: 0 0 3rem 2.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: var(--surface);
+            border: 2px solid var(--border);
+        }
+
+        .timeline-item.current::before {
+            border-color: var(--accent);
+            background: var(--accent);
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-meta {
+            text-align: right;
+        }
+
+        .timeline-company {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--ink-muted);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-period {
+            font-size: 0.75rem;
+            color: var(--ink-muted);
+        }
+
+        .timeline-role {
+            font-family: var(--serif);
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .timeline-desc {
+            font-size: 0.92rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+        }
+
+        .timeline-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 100px;
+            background: var(--accent-bg);
+            color: var(--accent);
+            margin-top: 0.6rem;
+        }
+
+        .timeline-tag.edu {
+            background: #FEF3E2;
+            color: #C47F00;
+        }
+
+        /* ── Expertise ──────────────────────────────────── */
+        #expertise {
+            background: var(--bg);
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 1rem;
+        }
+
+        .expertise-item {
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+            display: grid;
+            grid-template-columns: 3rem 1fr;
+            gap: 1.25rem;
+            align-items: start;
+        }
+
+        .expertise-item:nth-child(odd) {
+            padding-right: 3rem;
+            border-right: 1px solid var(--border);
+        }
+
+        .expertise-item:nth-child(even) {
+            padding-left: 3rem;
+        }
+
+        .expertise-num {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--accent);
+            line-height: 1;
+            padding-top: 2px;
+        }
+
+        .expertise-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 0.4rem;
+            line-height: 1.4;
+        }
+
+        .expertise-desc {
+            font-size: 0.87rem;
+            color: var(--ink-muted);
+            line-height: 1.7;
+        }
+
+        /* ── Writing ────────────────────────────────────── */
+        #writing {
+            background: var(--surface);
+        }
+
+        .writing-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .writing-all-link {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            white-space: nowrap;
+        }
+
+        .blog-grid-v2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5px;
+            background: var(--border);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .blog-card-v2 {
+            background: var(--surface);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            transition: background 0.2s;
+        }
+
+        .blog-card-v2:hover { background: var(--bg); }
+
+        .blog-card-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .blog-cat {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .blog-date-v2 {
+            font-size: 0.72rem;
+            color: var(--ink-muted);
+        }
+
+        .blog-title-v2 {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--ink);
+            line-height: 1.35;
+        }
+
+        .blog-excerpt-v2 {
+            font-size: 0.85rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            flex: 1;
+        }
+
+        .blog-read-link {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin-top: auto;
+        }
+
+        /* ── Press ──────────────────────────────────────── */
+        #press {
+            background: var(--bg);
+        }
+
+        .press-list {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .press-item {
+            display: grid;
+            grid-template-columns: 2rem 160px 1fr auto;
+            gap: 1.5rem;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.15s;
+        }
+
+        .press-item:first-child { border-top: 1px solid var(--border); }
+
+        .press-num {
+            font-family: var(--serif);
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--ink-muted);
+        }
+
+        .press-outlet {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+        }
+
+        .press-title {
+            font-size: 0.92rem;
+            font-weight: 500;
+            color: var(--ink);
+            line-height: 1.4;
+        }
+
+        .press-arrow {
+            font-size: 1rem;
+            color: var(--ink-muted);
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .press-item:hover .press-arrow {
+            color: var(--accent);
+            transform: translateX(3px);
+        }
+
+        /* ── Speaking ───────────────────────────────────── */
+        #speaking {
+            background: var(--surface);
+        }
+
+        .speaking-grid-v2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .speaking-card-v2 {
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1.5px solid var(--border);
+            background: var(--surface);
+        }
+
+        .speaking-img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        .speaking-body {
+            padding: 1.25rem;
+        }
+
+        .speaking-event-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+        }
+
+        .speaking-title-v2 {
+            font-family: var(--serif);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--ink);
+            line-height: 1.35;
+            margin-bottom: 0.5rem;
+        }
+
+        .speaking-desc-v2 {
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            line-height: 1.65;
+        }
+
+        /* ── Videos ─────────────────────────────────────── */
+        #videos {
+            background: var(--bg);
+        }
+
+        .video-tabs-v2 {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1rem 0 2rem;
+            border-bottom: 1.5px solid var(--border);
+            padding-bottom: 0;
+        }
+
+        .video-tab-v2 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--ink-muted);
+            padding: 0.6rem 1rem;
+            border-radius: 6px 6px 0 0;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1.5px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .video-tab-v2.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .video-content-v2 { display: none; }
+        .video-content-v2.active { display: block; }
+
+        .video-slider-wrap {
+            position: relative;
+        }
+
+        .video-slider-v2 {
+            overflow: hidden;
+        }
+
+        .video-track-v2 {
+            display: flex;
+            gap: 1.25rem;
+            transition: transform 0.35s ease;
+        }
+
+        .video-card-v2 {
+            min-width: 300px;
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .video-card-v2:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .video-thumb-v2 {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: var(--bg);
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .video-thumb-v2 iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .video-play-icon {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.25);
+            color: white;
+            font-size: 1.5rem;
+            transition: background 0.2s;
+        }
+
+        .video-card-v2:hover .video-play-icon {
+            background: rgba(66,133,244,0.7);
+        }
+
+        .video-info-v2 {
+            padding: 1rem 1.1rem;
+        }
+
+        .video-ep {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.3rem;
+        }
+
+        .video-title-v2 {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--ink);
+            line-height: 1.35;
+            margin-bottom: 0.3rem;
+        }
+
+        .video-desc-v2 {
+            font-size: 0.78rem;
+            color: var(--ink-muted);
+            line-height: 1.6;
+        }
+
+        .slider-controls {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .slider-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            background: var(--surface);
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ink-mid);
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .slider-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .slider-btn:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+        }
+
+        .videos-li-cta {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .videos-li-cta span {
+            font-size: 0.85rem;
+            color: var(--ink-muted);
+        }
+
+        /* ── Contact ────────────────────────────────────── */
+        #contact {
+            background: var(--ink);
+            color: white;
+        }
+
+        .contact-inner {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .contact-headline {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 4vw, 4rem);
+            font-weight: 600;
+            line-height: 1.15;
+            color: white;
+        }
+
+        .contact-headline em {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--accent);
+        }
+
+        .contact-sub {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.55);
+            margin-top: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .btn-contact {
+            background: var(--accent);
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 0.85rem 2rem;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s, transform 0.15s;
+            white-space: nowrap;
+        }
+
+        .btn-contact:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+
+        /* ── Footer ─────────────────────────────────────── */
+        footer {
+            background: var(--ink);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 1.5rem clamp(2rem, 6vw, 6rem);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        footer p {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.3);
+        }
+
+        footer a {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.4);
+            transition: color 0.2s;
+        }
+
+        footer a:hover { color: white; }
+
+        /* ── Featured Work ──────────────────────────────── */
+        #featured {
+            background: var(--surface);
+            display: none; /* included via writing section */
+        }
+
+        /* ── Responsive ─────────────────────────────────── */
+        @media (max-width: 960px) {
+            .sidebar { display: none; }
+            .mobile-header { display: flex; }
+            .page-wrap { margin-left: 0; padding-top: 56px; }
+
+            .hero-inner {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-photo-wrap {
+                max-width: 340px;
+                margin: 0 auto;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .blog-grid-v2 {
+                grid-template-columns: 1fr;
+            }
+
+            .speaking-grid-v2 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .expertise-item:nth-child(odd) {
+                padding-right: 0;
+                border-right: none;
+            }
+
+            .expertise-item:nth-child(even) {
+                padding-left: 0;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .timeline-meta {
+                text-align: left;
+            }
+
+            .contact-inner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .press-item {
+                grid-template-columns: 2rem 1fr auto;
+                gap: 0.75rem;
+            }
+
+            .press-outlet { display: none; }
+        }
+
+        @media (max-width: 600px) {
+            :root { --section-pad: 60px; }
+
+            .hero-name { font-size: 3.5rem; }
+
+            .speaking-grid-v2 {
+                grid-template-columns: 1fr;
+            }
+
+            .video-card-v2 { min-width: 260px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── Sidebar ──────────────────────────────────────────── -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+        <span class="monogram">DG</span>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav">
+        <a href="#home"      class="nav-item active" data-section="home">Home</a>
+        <a href="#about"     class="nav-item"        data-section="about">About</a>
+        <a href="#career"    class="nav-item"        data-section="career">Career</a>
+        <a href="#expertise" class="nav-item"        data-section="expertise">Expertise</a>
+        <a href="#writing"   class="nav-item"        data-section="writing">Writing</a>
+        <a href="#press"     class="nav-item"        data-section="press">Press</a>
+        <a href="#speaking"  class="nav-item"        data-section="speaking">Speaking</a>
+        <a href="#videos"    class="nav-item"        data-section="videos">Videos</a>
+        <a href="#contact"   class="nav-item"        data-section="contact">Contact</a>
+    </nav>
+    <div class="sidebar-footer">
+        <a href="https://www.linkedin.com/in/devang-gaur/" target="_blank">
+            <span class="li-icon"></span>LinkedIn
+        </a>
+        <a href="index.html">← Classic site</a>
+    </div>
+</aside>
+
+<!-- ── Mobile Header ────────────────────────────────────── -->
+<header class="mobile-header">
+    <a href="#home" class="mobile-monogram">DG</a>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+    <a href="#home"      onclick="closeMobileNav()">Home</a>
+    <a href="#about"     onclick="closeMobileNav()">About</a>
+    <a href="#career"    onclick="closeMobileNav()">Career</a>
+    <a href="#expertise" onclick="closeMobileNav()">Expertise</a>
+    <a href="#writing"   onclick="closeMobileNav()">Writing</a>
+    <a href="#press"     onclick="closeMobileNav()">Press</a>
+    <a href="#speaking"  onclick="closeMobileNav()">Speaking</a>
+    <a href="#videos"    onclick="closeMobileNav()">Videos</a>
+    <a href="#contact"   onclick="closeMobileNav()">Contact</a>
+    <a href="https://www.linkedin.com/in/devang-gaur/" target="_blank">LinkedIn ↗</a>
+</nav>
+
+<!-- ── Page ─────────────────────────────────────────────── -->
+<div class="page-wrap">
+
+    <!-- Hero -->
+    <section id="home">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <div class="hero-label">
+                    <span class="hero-label-dot"></span>
+                    Product Manager · Google Payments
+                </div>
+                <h1 class="hero-name">Devang<br><em>Gaur</em></h1>
+                <p class="hero-tagline">
+                    Building the payment platform behind YouTube, Google Play, and Google Store. I turn complex payment infrastructure into seamless consumer experiences.
+                </p>
+                <div class="hero-cta">
+                    <a href="#writing" class="btn-solid">Read My Blog</a>
+                    <a href="https://www.linkedin.com/in/devang-gaur/" target="_blank" class="btn-outline">Connect on LinkedIn ↗</a>
+                </div>
+                <div class="hero-logos">
+                    <span class="hero-logos-label">Previously at</span>
+                    <img src="adobe-logo.png" alt="Adobe">
+                    <img src="paypal-logo.png" alt="PayPal">
+                    <img src="dell-logo.png" alt="Dell">
+                </div>
+            </div>
+            <div class="hero-photo-wrap">
+                <div class="hero-photo-bg"></div>
+                <img src="Pictures/Headshots/devang_gaur_hs.png" alt="Devang Gaur" class="hero-photo">
+                <div class="hero-chip chip-google">
+                    <img src="google-logo.png" alt="Google">
+                    Google Payments
+                </div>
+                <div class="hero-chip chip-cmu">
+                    🎓 Carnegie Mellon
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="section-label">01 — About</div>
+        <div class="about-grid">
+            <div>
+                <p class="about-statement">
+                    I build payment products <em>used by billions</em> of people every day.
+                </p>
+            </div>
+            <div class="about-detail">
+                <p>
+                    At <strong>Google</strong>, I'm part of the Payments organization building the consumer payments platform that powers first-party products like YouTube, Google Play, and Google Store.
+                </p>
+                <p>
+                    My team owns payment buyflows and platform capabilities — the infrastructure that sits between a user tapping "Buy" and a transaction completing. That includes:
+                </p>
+                <div class="buyflow-pills">
+                    <span class="buyflow-pill primary">Full Buyflow</span>
+                    <span class="buyflow-pill">Lite Buyflow</span>
+                    <span class="buyflow-pill">Platform Capabilities</span>
+                </div>
+                <p style="margin-top:1.2rem;">
+                    <strong>Full Buyflow</strong> is a hosted checkout that handles product details, payment method selection, legal messaging, and completion. <strong>Lite Buyflow</strong> is a lightweight embedded integration where the product team controls parts of the experience.
+                </p>
+                <p>
+                    Before Google, I drove payment innovation at <strong>Adobe</strong> and <strong>PayPal</strong> — building fraud detection systems, ML-powered optimization platforms, and expanding payment operations across global markets.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career -->
+    <section id="career">
+        <div class="section-label">02 — Career</div>
+        <div class="timeline">
+
+            <div class="timeline-item current">
+                <div class="timeline-meta">
+                    <div class="timeline-company">Google</div>
+                    <div class="timeline-period">2025 — Present</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Product Manager, Payments</div>
+                    <p class="timeline-desc">Leading product for Google's consumer payments platform. Building Full Buyflow and Lite Buyflow capabilities powering YouTube, Google Play, and Google Store at global scale.</p>
+                    <span class="timeline-tag">Current Role</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <div class="timeline-company">Adobe</div>
+                    <div class="timeline-period">Previous</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Senior Product Manager, Payments</div>
+                    <p class="timeline-desc">Pioneered ML platforms for payment optimization and expanded payment operations across global markets. Led initiatives generating significant revenue impact through AI-powered retry strategies and authorization intelligence.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <div class="timeline-company">PayPal</div>
+                    <div class="timeline-period">Previous</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Product Manager, Risk & Fraud</div>
+                    <p class="timeline-desc">Architected real-time fraud detection systems processing billions in annual transaction volume. Built ML-powered risk scoring models and compliance frameworks across multiple markets.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <div class="timeline-company">Dell Technologies</div>
+                    <div class="timeline-period">Previous</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Product Manager</div>
+                    <p class="timeline-desc">Revamped checkout and payment experiences generating millions in incremental revenue. Focused on conversion optimization and reducing payment friction for enterprise and consumer segments.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <div class="timeline-company">CMU</div>
+                    <div class="timeline-period">Education</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Carnegie Mellon University</div>
+                    <p class="timeline-desc">Graduate studies at one of the world's leading technology and engineering institutions.</p>
+                    <span class="timeline-tag edu">Education</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise">
+        <div class="section-label">03 — Expertise</div>
+        <div class="expertise-grid">
+            <div class="expertise-item">
+                <span class="expertise-num">01</span>
+                <div>
+                    <div class="expertise-title">Authorization Intelligence</div>
+                    <p class="expertise-desc">ML-powered authorization optimization, network token implementation (Visa NTI, Mastercard TRACE ID), and intelligent retry strategies that recover failed transactions.</p>
+                </div>
+            </div>
+            <div class="expertise-item">
+                <span class="expertise-num">02</span>
+                <div>
+                    <div class="expertise-title">Agentic Payment Systems</div>
+                    <p class="expertise-desc">Building autonomous payment workflows with AI agents that make intelligent routing and processing decisions without human intervention.</p>
+                </div>
+            </div>
+            <div class="expertise-item">
+                <span class="expertise-num">03</span>
+                <div>
+                    <div class="expertise-title">AI-Powered Risk Management</div>
+                    <p class="expertise-desc">Real-time fraud detection, predictive risk scoring, and ML models processing billions in payment volume to protect consumers and merchants.</p>
+                </div>
+            </div>
+            <div class="expertise-item">
+                <span class="expertise-num">04</span>
+                <div>
+                    <div class="expertise-title">Payment Optimization</div>
+                    <p class="expertise-desc">Data-driven algorithms for routing, compliance automation (PSD2, 3DS2), and payment chain architecture designed for maximum approval rates.</p>
+                </div>
+            </div>
+            <div class="expertise-item">
+                <span class="expertise-num">05</span>
+                <div>
+                    <div class="expertise-title">Stored Credentials & Tokenization</div>
+                    <p class="expertise-desc">Card-on-file compliance, secure credential storage, and tokenization strategies across payment networks for recurring and subscription commerce.</p>
+                </div>
+            </div>
+            <div class="expertise-item">
+                <span class="expertise-num">06</span>
+                <div>
+                    <div class="expertise-title">Global Payment Infrastructure</div>
+                    <p class="expertise-desc">Local payment methods (UPI, PIX, iDEAL, WeChat Pay), cross-border optimization, and multi-gateway orchestration at enterprise scale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Writing -->
+    <section id="writing">
+        <div class="section-label">04 — Writing</div>
+        <div class="writing-header">
+            <h2 class="section-title">Product Insights</h2>
+            <a href="#writing" class="writing-all-link">All 8 posts ↓</a>
+        </div>
+        <div class="blog-grid-v2">
+            <div class="blog-card-v2" onclick="location.href='blog/virality-part-2.html'" style="cursor:pointer">
+                <div class="blog-card-meta">
+                    <span class="blog-cat">Products</span>
+                    <span class="blog-date-v2">Sep 15, 2021</span>
+                </div>
+                <div class="blog-title-v2">Virality is Not Born, It Is Made: Part 2 | Minting Social Currency</div>
+                <p class="blog-excerpt-v2">How companies strategically design products to become viral through social currency — intrinsic peculiarity, game mechanics, and creating insiders.</p>
+                <a href="blog/virality-part-2.html" class="blog-read-link">Read More →</a>
+            </div>
+            <div class="blog-card-v2" onclick="location.href='blog/virality-part-1.html'" style="cursor:pointer">
+                <div class="blog-card-meta">
+                    <span class="blog-cat">Design</span>
+                    <span class="blog-date-v2">Sep 7, 2021</span>
+                </div>
+                <div class="blog-title-v2">Virality is Not Born, It Is Made: Part 1</div>
+                <p class="blog-excerpt-v2">Introduction to Jonah Berger's STEPPS framework and how products achieve viral success through strategic design rather than accident.</p>
+                <a href="blog/virality-part-1.html" class="blog-read-link">Read More →</a>
+            </div>
+            <div class="blog-card-v2" onclick="location.href='blog/mvp-vs-mlp.html'" style="cursor:pointer">
+                <div class="blog-card-meta">
+                    <span class="blog-cat">Products</span>
+                    <span class="blog-date-v2">Jun 18, 2021</span>
+                </div>
+                <div class="blog-title-v2">Is Minimum Viable Product, Viable Anymore?</div>
+                <p class="blog-excerpt-v2">Why the traditional MVP approach has become less effective and why Minimum Lovable Product (MLP) is a better option in today's competitive market.</p>
+                <a href="blog/mvp-vs-mlp.html" class="blog-read-link">Read More →</a>
+            </div>
+            <div class="blog-card-v2" onclick="location.href='blog/why-products-fail.html'" style="cursor:pointer">
+                <div class="blog-card-meta">
+                    <span class="blog-cat">Products</span>
+                    <span class="blog-date-v2">May 14, 2021</span>
+                </div>
+                <div class="blog-title-v2">Why Do Products Fail?</div>
+                <p class="blog-excerpt-v2">Exploring product failure through the painkiller vs vitamin framework and how successful products blend both categories to form lasting habits.</p>
+                <a href="blog/why-products-fail.html" class="blog-read-link">Read More →</a>
+            </div>
+            <div class="blog-card-v2" onclick="location.href='blog/spotify-tribe-model.html'" style="cursor:pointer">
+                <div class="blog-card-meta">
+                    <span class="blog-cat">Culture</span>
+                    <span class="blog-date-v2">Aug 2, 2021</span>
+                </div>
+                <div class="blog-title-v2">Spotify | Tribe Engineering Model</div>
+                <p class="blog-excerpt-v2">Exploring Spotify's innovative organizational structure with squads, tribes, chapters, and guilds for managing large-scale product development.</p>
+                <a href="blog/spotify-tribe-model.html" class="blog-read-link">Read More →</a>
+            </div>
+            <div class="blog-card-v2" onclick="location.href='blog/disruptive-innovation.html'" style="cursor:pointer">
+                <div class="blog-card-meta">
+                    <span class="blog-cat">Products</span>
+                    <span class="blog-date-v2">Jul 4, 2021</span>
+                </div>
+                <div class="blog-title-v2">What is 'Disruptive Innovation'?</div>
+                <p class="blog-excerpt-v2">Examining the commonly misunderstood concept of disruptive innovation using Tesla as a case study to show what disruption really means.</p>
+                <a href="blog/disruptive-innovation.html" class="blog-read-link">Read More →</a>
+            </div>
+            <div class="blog-card-v2" onclick="location.href='blog/user-behavior.html'" style="cursor:pointer">
+                <div class="blog-card-meta">
+                    <span class="blog-cat">Products</span>
+                    <span class="blog-date-v2">Jun 5, 2021</span>
+                </div>
+                <div class="blog-title-v2">What Drives User Behavior?</div>
+                <p class="blog-excerpt-v2">Prof. B.J. Fogg's behavior model (B = MAT) and how tech companies leverage psychology to create habit-forming products.</p>
+                <a href="blog/user-behavior.html" class="blog-read-link">Read More →</a>
+            </div>
+            <div class="blog-card-v2" onclick="location.href='blog/manipulation-matrix.html'" style="cursor:pointer">
+                <div class="blog-card-meta">
+                    <span class="blog-cat">Products</span>
+                    <span class="blog-date-v2">Jun 1, 2021</span>
+                </div>
+                <div class="blog-title-v2">Manipulation Matrix | A Tool to Assess Habit Forming Products</div>
+                <p class="blog-excerpt-v2">Nir Eyal's Manipulation Matrix through Flappy Bird's story and the ethics of building habit-forming products.</p>
+                <a href="blog/manipulation-matrix.html" class="blog-read-link">Read More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press -->
+    <section id="press">
+        <div class="section-label">05 — Press &amp; Publications</div>
+        <h2 class="section-title" style="margin-bottom:1rem">Thought Leadership</h2>
+        <div class="press-list">
+            <a class="press-item" href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/card-on-file-done-right-how-to-stay-compliant-with-the-stored-credential-mandate" target="_blank">
+                <span class="press-num">01</span>
+                <span class="press-outlet">Merchant Risk Council</span>
+                <span class="press-title">Card-on-File Done Right: How to Stay Compliant with the Stored Credential Mandate</span>
+                <span class="press-arrow">→</span>
+            </a>
+            <a class="press-item" href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/boosting-authorization-success-a-practical-guide-to-visa-nti-and-mastercard-trace-id-mandates" target="_blank">
+                <span class="press-num">02</span>
+                <span class="press-outlet">Merchant Risk Council</span>
+                <span class="press-title">Boosting Authorization Success: A Practical Guide to Visa NTI and Mastercard TRACE ID Mandates</span>
+                <span class="press-arrow">→</span>
+            </a>
+            <a class="press-item" href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/building-a-trusted-payment-chain" target="_blank">
+                <span class="press-num">03</span>
+                <span class="press-outlet">Merchant Risk Council</span>
+                <span class="press-title">Building a Trusted Payment Chain</span>
+                <span class="press-arrow">→</span>
+            </a>
+            <a class="press-item" href="https://thepaypers.com/payments/expert-views/from-optimisation-to-autonomy-building-the-data-foundations-for-agentic-payments" target="_blank">
+                <span class="press-num">04</span>
+                <span class="press-outlet">The Paypers</span>
+                <span class="press-title">From Optimisation to Autonomy: Building the Data Foundations for Agentic Payments</span>
+                <span class="press-arrow">→</span>
+            </a>
+            <a class="press-item" href="https://www.techtimes.com/articles/310910/20250619/beyond-failure-point-how-devang-gaur-making-ecommerce-payments-workintelligently.htm" target="_blank">
+                <span class="press-num">05</span>
+                <span class="press-outlet">TechTimes</span>
+                <span class="press-title">Beyond the Failure Point: How Devang Gaur is Making eCommerce Payments Work Intelligently</span>
+                <span class="press-arrow">→</span>
+            </a>
+            <a class="press-item" href="https://financefeeds.com/the-future-of-payment-optimization-how-devang-gaur-is-using-ai-to-make-every-transaction-count" target="_blank">
+                <span class="press-num">06</span>
+                <span class="press-outlet">FinanceFeeds</span>
+                <span class="press-title">The Future of Payment Optimization: How Devang Gaur is Using AI to Make Every Transaction Count</span>
+                <span class="press-arrow">→</span>
+            </a>
+            <a class="press-item" href="https://www.inverse.com/tech/regulation-as-advantage-how-devang-gaur-turns-compliance-into-a-growth-strategy" target="_blank">
+                <span class="press-num">07</span>
+                <span class="press-outlet">Inverse</span>
+                <span class="press-title">Regulation as Advantage: How Devang Gaur Turns Compliance into a Growth Strategy</span>
+                <span class="press-arrow">→</span>
+            </a>
+            <a class="press-item" href="https://apple.news/ArQgyB2tkQ_qRirgCgd3Z_g" target="_blank">
+                <span class="press-num">08</span>
+                <span class="press-outlet">Apple News</span>
+                <span class="press-title">Featured Article on Payment Innovation</span>
+                <span class="press-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Speaking -->
+    <section id="speaking">
+        <div class="section-label">06 — Speaking</div>
+        <h2 class="section-title" style="margin-bottom:2rem">Industry Recognition</h2>
+        <div class="speaking-grid-v2">
+            <div class="speaking-card-v2">
+                <img src="Pictures/Industry Conferences/mrc1.jpeg" alt="Speaking at Merchant Risk Council" class="speaking-img">
+                <div class="speaking-body">
+                    <div class="speaking-event-label">Merchant Risk Council</div>
+                    <div class="speaking-title-v2">Payment Innovation &amp; Risk Management</div>
+                    <p class="speaking-desc-v2">Presented on payment optimization strategies, involuntary churn reduction, and the impact of payment failures on customer experience and business KPIs.</p>
+                </div>
+            </div>
+            <div class="speaking-card-v2">
+                <img src="Pictures/Industry Conferences/pls2.jpeg" alt="Panel at Payments Leadership Summit" class="speaking-img">
+                <div class="speaking-body">
+                    <div class="speaking-event-label">Payments Leadership Summit</div>
+                    <div class="speaking-title-v2">Panel: Future of Payment Technology</div>
+                    <p class="speaking-desc-v2">Expert panel discussing AI-powered payment optimization, network tokens, and emerging payment technologies shaping the industry.</p>
+                </div>
+            </div>
+            <div class="speaking-card-v2">
+                <img src="Pictures/Industry Conferences/pls3.jpeg" alt="Payments Conference" class="speaking-img">
+                <div class="speaking-body">
+                    <div class="speaking-event-label">Industry Conference</div>
+                    <div class="speaking-title-v2">Payment Compliance &amp; Global Expansion</div>
+                    <p class="speaking-desc-v2">Insights on navigating payment compliance mandates, implementing local payment methods, and scaling payment operations globally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos -->
+    <section id="videos">
+        <div class="section-label">07 — Payment Education</div>
+        <h2 class="section-title">23 Videos on Payments</h2>
+        <div class="video-tabs-v2">
+            <div class="video-tab-v2 active" onclick="switchVideoTab('lod', this)">Life of a Dollar (18 episodes)</div>
+            <div class="video-tab-v2" onclick="switchVideoTab('lpm', this)">Local Payment Methods (5 episodes)</div>
+        </div>
+
+        <!-- Life of a Dollar -->
+        <div class="video-content-v2 active" id="tab-lod">
+            <div class="video-slider-wrap">
+                <div class="video-slider-v2">
+                    <div class="video-track-v2" id="track-lod">
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7279902764267151360','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep0.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Series Launch</div>
+                                <div class="video-title-v2">Life of a Dollar — Introduction</div>
+                                <p class="video-desc-v2">The journey of a dollar through the modern payment system.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7281036490203586561','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep1.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 1</div>
+                                <div class="video-title-v2">How a Payment Works</div>
+                                <p class="video-desc-v2">End-to-end flow of a card transaction from swipe to settlement.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7282450025297281025','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep2.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 2</div>
+                                <div class="video-title-v2">Payment Networks</div>
+                                <p class="video-desc-v2">The role of Visa, Mastercard, and other networks in payments.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7283900254601056256','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep3.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 3</div>
+                                <div class="video-title-v2">Interchange Fees</div>
+                                <p class="video-desc-v2">Understanding who gets paid what in every transaction.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7285363533210759168','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep4.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 4</div>
+                                <div class="video-title-v2">Authorization vs Settlement</div>
+                                <p class="video-desc-v2">Why authorization and settlement are two distinct events.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7286828003263705088','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep5.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 5</div>
+                                <div class="video-title-v2">Chargebacks</div>
+                                <p class="video-desc-v2">How chargebacks work and why they matter to merchants.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7288265455736729601','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep6.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 6</div>
+                                <div class="video-title-v2">Payment Processors</div>
+                                <p class="video-desc-v2">What payment processors do and how they fit in the ecosystem.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7289703095695458304','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep7.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 7</div>
+                                <div class="video-title-v2">3D Secure Authentication</div>
+                                <p class="video-desc-v2">How 3DS2 protects online transactions and impacts conversion.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7291141069284773889','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep8.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 8</div>
+                                <div class="video-title-v2">Network Tokens</div>
+                                <p class="video-desc-v2">How network tokenization improves security and authorization rates.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7292556059050225664','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep9.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 9</div>
+                                <div class="video-title-v2">Payment Decline Codes</div>
+                                <p class="video-desc-v2">What decline codes mean and how to use them to recover revenue.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7294003498427670528','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep10.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 10</div>
+                                <div class="video-title-v2">Stored Credentials</div>
+                                <p class="video-desc-v2">Card-on-file frameworks and the compliance rules around them.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7295442083151011840','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep11.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 11</div>
+                                <div class="video-title-v2">PSD2 &amp; Strong Customer Authentication</div>
+                                <p class="video-desc-v2">Europe's payment regulation and its impact on merchants worldwide.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7296883720882532352','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep12.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 12</div>
+                                <div class="video-title-v2">Payment Gateway vs Processor</div>
+                                <p class="video-desc-v2">The difference between gateways and processors and when you need each.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7291141069284773889','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep13.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 13</div>
+                                <div class="video-title-v2">Fraud Detection Basics</div>
+                                <p class="video-desc-v2">How fraud detection systems flag suspicious transactions in real time.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7292556059050225664','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep14.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 14</div>
+                                <div class="video-title-v2">Subscription Payments</div>
+                                <p class="video-desc-v2">How recurring billing and subscription models work in payments.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7295442083151011840','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep15.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 15</div>
+                                <div class="video-title-v2">CVV Security Code</div>
+                                <p class="video-desc-v2">The role of CVV codes in protecting against payment fraud.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7297208173323595776','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep17.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 16</div>
+                                <div class="video-title-v2">Card Testing Fraud</div>
+                                <p class="video-desc-v2">How fraudsters test stolen cards and how merchants can defend against it.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7298348205350563840','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/life of a dollar/Ep17.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 17</div>
+                                <div class="video-title-v2">The Durbin Amendment</div>
+                                <p class="video-desc-v2">Understanding the Durbin Amendment's impact on debit card interchange fees.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="lod-prev" onclick="slideV2('lod',-1)">‹</button>
+                    <button class="slider-btn" id="lod-next" onclick="slideV2('lod',1)">›</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local Payment Methods -->
+        <div class="video-content-v2" id="tab-lpm">
+            <div class="video-slider-wrap">
+                <div class="video-slider-v2">
+                    <div class="video-track-v2" id="track-lpm">
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7310154333046652929','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/lpms/Ep1.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 1</div>
+                                <div class="video-title-v2">Introduction to Local Payment Methods</div>
+                                <p class="video-desc-v2">Why local payment methods are crucial for global payment operations.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7311235602958430208','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/lpms/Ep2.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 2</div>
+                                <div class="video-title-v2">India — UPI</div>
+                                <p class="video-desc-v2">How UPI revolutionized digital payments in India with instant, interoperable transactions.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7312866351516160001','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/lpms/Ep3.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 3</div>
+                                <div class="video-title-v2">Brazil — PIX</div>
+                                <p class="video-desc-v2">Brazil's instant payment system that transformed the country's payment landscape.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7313953544896761856','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/lpms/Ep4.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 4</div>
+                                <div class="video-title-v2">Netherlands — iDEAL</div>
+                                <p class="video-desc-v2">The Dutch online banking payment method that dominates e-commerce in the Netherlands.</p>
+                            </div>
+                        </div>
+                        <div class="video-card-v2" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7316135993806360577','_blank')">
+                            <div class="video-thumb-v2" style="background-image:url('thumbnails/lpms/Ep5.png')">
+                                <div class="video-play-icon">▶</div>
+                            </div>
+                            <div class="video-info-v2">
+                                <div class="video-ep">Episode 5</div>
+                                <div class="video-title-v2">China — WeChat Pay</div>
+                                <p class="video-desc-v2">WeChat Pay's dominance in China's mobile payment ecosystem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="lpm-prev" onclick="slideV2('lpm',-1)">‹</button>
+                    <button class="slider-btn" id="lpm-next" onclick="slideV2('lpm',1)">›</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="videos-li-cta">
+            <span>View the full library on LinkedIn</span>
+            <a href="https://www.linkedin.com/in/devang-gaur/recent-activity/videos/" target="_blank" class="btn-solid">Visit LinkedIn ↗</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact-inner">
+            <div>
+                <h2 class="contact-headline">Let's talk<br><em>payments.</em></h2>
+                <p class="contact-sub">I speak on AI/ML in payments, product management, and risk. Open to collaboration, speaking invitations, and connecting with others in the space.</p>
+            </div>
+            <a href="https://www.linkedin.com/in/devang-gaur/" target="_blank" class="btn-contact">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                Connect on LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Devang Gaur. All rights reserved.</p>
+        <a href="index.html">← Classic site</a>
+    </footer>
+
+</div><!-- end .page-wrap -->
+
+<script>
+    // ── Mobile nav toggle ──────────────────────────
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+        document.getElementById('mobile-nav').classList.toggle('open');
+    });
+
+    function closeMobileNav() {
+        document.getElementById('mobile-nav').classList.remove('open');
+    }
+
+    // ── Active sidebar nav via IntersectionObserver ──
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('#sidebar-nav .nav-item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.dataset.section === id);
+                });
+            }
+        });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach(s => observer.observe(s));
+
+    // ── Video tab switching ────────────────────────
+    function switchVideoTab(tabId, el) {
+        document.querySelectorAll('.video-tab-v2').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.video-content-v2').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+        document.getElementById('tab-' + tabId).classList.add('active');
+        videoSliderState[tabId].index = 0;
+        document.getElementById('track-' + tabId).style.transform = 'translateX(0)';
+        updateSliderBtns(tabId);
+    }
+
+    // ── Video slider ───────────────────────────────
+    const videoSliderState = {
+        lod: { index: 0, cardW: 300, gap: 20 },
+        lpm: { index: 0, cardW: 300, gap: 20 }
+    };
+
+    function slideV2(id, dir) {
+        const state = videoSliderState[id];
+        const track = document.getElementById('track-' + id);
+        const cards = track.querySelectorAll('.video-card-v2');
+        const maxIndex = Math.max(0, cards.length - 3);
+
+        state.index = Math.max(0, Math.min(state.index + dir, maxIndex));
+        track.style.transform = `translateX(-${state.index * (state.cardW + state.gap)}px)`;
+        updateSliderBtns(id);
+    }
+
+    function updateSliderBtns(id) {
+        const state = videoSliderState[id];
+        const track = document.getElementById('track-' + id);
+        const cards = track.querySelectorAll('.video-card-v2');
+        const maxIndex = Math.max(0, cards.length - 3);
+        document.getElementById(id + '-prev').disabled = state.index === 0;
+        document.getElementById(id + '-next').disabled = state.index >= maxIndex;
+    }
+
+    // Init button states
+    updateSliderBtns('lod');
+    updateSliderBtns('lpm');
+
+    // ── Analytics helpers ──────────────────────────
+    window.addEventListener('DOMContentLoaded', () => {
+        // Scroll depth
+        let maxScroll = 0;
+        const milestones = [25, 50, 75, 100];
+        const tracked = new Set();
+        window.addEventListener('scroll', () => {
+            const pct = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+            if (pct > maxScroll) maxScroll = pct;
+            milestones.forEach(m => {
+                if (pct >= m && !tracked.has(m)) {
+                    tracked.add(m);
+                    gtag('event', 'scroll_depth', { event_category: 'Engagement', event_label: m + '%', value: m });
+                }
+            });
+        });
+
+        // External links
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            if (!link.href.includes(window.location.hostname)) {
+                link.addEventListener('click', () => {
+                    gtag('event', 'click', { event_category: 'External Link', event_label: link.href });
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
