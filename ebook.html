@@ -34,44 +34,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1AT57lk3BXfD-GXbwh3WUsGtl4GjnVsqZ/view?usp=sharing">
     <title>Redirecting to Ebook - Devang Gaur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg:    #0C0C0C;
+            --text:  #EDEAE4;
+            --dim:   #888888;
+            --accent:#F5A623;
+            --sans:  'Syne', sans-serif;
+            --body:  'Inter', sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: var(--body);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-            color: white;
+            background: var(--bg);
+            color: var(--text);
+            position: relative;
+            overflow: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(245,166,35,0.05) 0%, transparent 65%);
+            pointer-events: none;
         }
         .container {
             text-align: center;
             padding: 2rem;
+            position: relative;
+            z-index: 1;
         }
         h1 {
-            color: #00ff88;
-            margin-bottom: 1rem;
+            font-family: var(--sans);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.5rem;
         }
         p {
             margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            color: var(--dim);
+            line-height: 1.7;
         }
         a {
-            color: #00b4d8;
+            color: var(--accent);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
         a:hover {
             text-decoration: underline;
         }
         .spinner {
-            border: 4px solid rgba(0, 255, 136, 0.1);
-            border-top: 4px solid #00ff88;
+            border: 3px solid rgba(245,166,35,0.12);
+            border-top: 3px solid var(--accent);
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
+            width: 36px;
+            height: 36px;
+            animation: spin 0.9s linear infinite;
             margin: 2rem auto;
         }
         @keyframes spin {

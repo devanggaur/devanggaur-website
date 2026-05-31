@@ -34,20 +34,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found - Devang Gaur</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: 'Quicksand';
-            src: url('Bitter,Lora,Manrope,Plus_Jakarta_Sans,Roboto/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
-            font-weight: 300 700;
-            font-style: normal;
-        }
-
         :root {
-            --primary: #0066cc;
-            --secondary: #00b4d8;
-            --accent: #00ff88;
-            --dark: #0a0e27;
-            --dark-alt: #1a1f3a;
+            --bg:           #0C0C0C;
+            --bg-card:      #141414;
+            --text:         #EDEAE4;
+            --text-dim:     #888888;
+            --text-muted:   #555555;
+            --accent:       #F5A623;
+            --accent-dim:   rgba(245,166,35,0.12);
+            --accent-glow:  rgba(245,166,35,0.07);
+            --border:       rgba(255,255,255,0.07);
+            --sans:         'Syne', sans-serif;
+            --body:         'Inter', sans-serif;
         }
 
         * {
@@ -57,67 +57,84 @@
         }
 
         body {
-            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, var(--dark) 0%, var(--dark-alt) 100%);
-            color: white;
+            font-family: var(--body);
+            background: var(--bg);
+            color: var(--text);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -60%);
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(245,166,35,0.05) 0%, transparent 65%);
+            pointer-events: none;
         }
 
         .error-container {
             text-align: center;
             max-width: 600px;
+            position: relative;
+            z-index: 1;
         }
 
         .error-code {
+            font-family: var(--sans);
             font-size: 10rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--accent), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-weight: 800;
+            color: var(--accent);
             line-height: 1;
             margin-bottom: 1rem;
-            animation: pulse 2s ease-in-out infinite;
+            opacity: 0.9;
+            animation: pulse 3s ease-in-out infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
+            0%, 100% { opacity: 0.9; }
+            50% { opacity: 0.65; }
         }
 
         h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: white;
+            font-family: var(--sans);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text);
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.05rem;
             margin-bottom: 2rem;
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.6;
+            color: var(--text-dim);
+            line-height: 1.7;
         }
 
         .error-message {
-            background: rgba(255, 255, 255, 0.05);
-            border-left: 4px solid var(--primary);
-            padding: 1rem;
+            background: var(--accent-glow);
+            border-left: 3px solid var(--accent);
+            padding: 1rem 1.25rem;
             margin-bottom: 2rem;
-            border-radius: 0;
             text-align: left;
+            color: var(--text-dim);
+            font-size: 0.9rem;
         }
 
         .error-message code {
-            background: rgba(0, 255, 136, 0.1);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
+            background: var(--accent-dim);
+            padding: 0.15rem 0.45rem;
             color: var(--accent);
             font-family: 'Courier New', monospace;
+            font-size: 0.9em;
         }
 
         .buttons {
@@ -128,82 +145,91 @@
         }
 
         .btn {
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
+            padding: 0.85rem 1.75rem;
+            font-size: 0.95rem;
             font-weight: 600;
             text-decoration: none;
             border: none;
             cursor: pointer;
-            transition: all 0.3s;
-            font-family: 'Quicksand', sans-serif;
+            transition: all 0.2s;
+            font-family: var(--sans);
+            letter-spacing: 0.03em;
         }
 
         .btn-primary {
             background: var(--accent);
-            color: var(--dark);
+            color: #0C0C0C;
         }
 
         .btn-primary:hover {
-            background: var(--secondary);
+            background: #FFB733;
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+            box-shadow: 0 8px 24px rgba(245,166,35,0.25);
         }
 
         .btn-secondary {
             background: transparent;
-            color: white;
-            border: 2px solid var(--secondary);
+            color: var(--text);
+            border: 1px solid var(--border);
         }
 
         .btn-secondary:hover {
-            background: var(--secondary);
+            border-color: var(--accent);
+            color: var(--accent);
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 180, 216, 0.3);
         }
 
         .helpful-links {
             margin-top: 3rem;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid var(--border);
         }
 
         .helpful-links h2 {
-            font-size: 1.3rem;
+            font-family: var(--sans);
+            font-size: 1.1rem;
+            font-weight: 600;
             margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.9);
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
         }
 
         .links-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin-top: 1rem;
         }
 
         .link-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 2px solid var(--accent);
+            padding: 0.9rem 1rem;
             text-decoration: none;
-            color: white;
-            transition: all 0.3s;
-            border-left: 2px solid var(--primary);
+            color: var(--text);
+            transition: all 0.2s;
         }
 
         .link-item:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-left-color: var(--accent);
-            transform: translateX(5px);
+            background: #1C1C1C;
+            transform: translateY(-2px);
         }
 
         .link-item-title {
+            font-family: var(--sans);
             font-weight: 600;
-            margin-bottom: 0.3rem;
-            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+            color: var(--text);
         }
 
         .link-item-desc {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.4;
         }
 
         @media (max-width: 768px) {
@@ -212,11 +238,7 @@
             }
 
             h1 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 1rem;
+                font-size: 1.4rem;
             }
 
             .buttons {
@@ -225,6 +247,7 @@
 
             .btn {
                 width: 100%;
+                text-align: center;
             }
         }
     </style>
