@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" data-layout="modern" data-theme="midnight">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2KVE5Y7EP"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-Z2KVE5Y7EP');
+        gtag('config', 'G-Z2KVE5Y7EP');
     </script>
-
+    <script>
+        !function (t, e) { var o, n, p, r; e.__SV || (window.posthog && window.posthog.__loaded) || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "Mi Ri init Vi Gi Rr Wi Ji Bi capture calculateEventProperties tn register register_once register_for_session unregister unregister_for_session an getFeatureFlag getFeatureFlagPayload getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync un identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty nn Xi createPersonProfile setInternalOrTestUser sn Hi cn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Ki debug Lr rn getPageViewId captureTraceFeedback captureTraceMetric Di".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+        posthog.init('phc_rAFr8TJNWgjnvCZwQWwEviw76S7Nb6KrTraA5JsQvNHQ', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2026-01-30',
+            person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+        })
+    </script>
+    <script>
+        posthog.onFeatureFlags(function() {
+            var flag = posthog.getFeatureFlag('personal-site-connections');
+            if (flag === 'test-2') {
+                window.location.replace('index-v2.html');
+            } else if (flag === 'test-3') {
+                window.location.replace('index-v3.html');
+            } else if (flag === 'test-4') {
+                window.location.replace('index-v4.html');
+            }
+            // control: stay on index.html
+        });
+    </script>
     <!-- Hotjar Tracking Code for My website -->
     <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:6612265,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            (function (h, o, t, j, a, r) {
+                h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+                h._hjSettings = { hjid: 6612265, hjsv: 6 };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script'); r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devang Gaur - Product Manager at Google | Payments Expert | Google, Adobe, PayPal</title>
-    <meta name="description" content="Devang Gaur is a Product Manager at Google on the Payments team, building consumer payment platforms for YouTube, Google Play, and Google Store. Previously at Adobe and PayPal.">
-    <meta name="keywords" content="Devang Gaur, Product Manager, Google, Payments, Google Pay, YouTube, Google Play, Google Store, Adobe, PayPal, Payment Platform, Buyflow, Carnegie Mellon">
+    <meta name="description"
+        content="Devang Gaur is a Product Manager at Google on the Payments team, building consumer payment platforms for YouTube, Google Play, and Google Store. Previously at Adobe and PayPal.">
+    <meta name="keywords"
+        content="Devang Gaur, Product Manager, Google, Payments, Google Pay, YouTube, Google Play, Google Store, Adobe, PayPal, Payment Platform, Buyflow, Carnegie Mellon">
     <meta name="author" content="Devang Gaur">
     <link rel="canonical" href="https://devanggaur.com/">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -36,14 +59,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://devanggaur.com/">
     <meta property="og:title" content="Devang Gaur - Product Manager at Google | Payments">
-    <meta property="og:description" content="Product Manager at Google on the Payments team, building consumer payment platforms powering YouTube, Google Play, and Google Store. Previously at Adobe and PayPal.">
+    <meta property="og:description"
+        content="Product Manager at Google on the Payments team, building consumer payment platforms powering YouTube, Google Play, and Google Store. Previously at Adobe and PayPal.">
     <meta property="og:image" content="https://devanggaur.com/Pictures/Headshots/devang_gaur_hs.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://devanggaur.com/">
     <meta property="twitter:title" content="Devang Gaur - Product Manager at Google | Payments">
-    <meta property="twitter:description" content="Product Manager at Google on the Payments team, building consumer payment platforms powering YouTube, Google Play, and Google Store. Previously at Adobe and PayPal.">
+    <meta property="twitter:description"
+        content="Product Manager at Google on the Payments team, building consumer payment platforms powering YouTube, Google Play, and Google Store. Previously at Adobe and PayPal.">
     <meta property="twitter:image" content="https://devanggaur.com/Pictures/Headshots/devang_gaur_hs.png">
 
     <!-- LinkedIn -->
@@ -106,6 +131,7 @@
             font-weight: 300 700;
             font-style: normal;
         }
+
         /* Theme: Midnight Professional */
         :root {
             --primary: #0066cc;
@@ -140,7 +166,7 @@
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .nav-container {
@@ -217,8 +243,13 @@
         }
 
         @keyframes gridMove {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(40px); }
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(40px);
+            }
         }
 
         .hero-container {
@@ -301,7 +332,7 @@
             width: 450px;
             height: 450px;
             border-radius: 50%;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             object-fit: cover;
             border: 4px solid var(--accent);
         }
@@ -350,14 +381,14 @@
             background: white;
             border-radius: 0;
             padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
             transition: all 0.3s;
             border-left: 4px solid var(--primary);
         }
 
         .featured-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         .card-tag {
@@ -424,7 +455,7 @@
             border-radius: 0;
             background: white;
             border-top: 4px solid var(--primary);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             display: flex;
             flex-direction: column;
         }
@@ -460,7 +491,7 @@
             background: white;
             border-radius: 0;
             padding: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             transition: all 0.3s;
             display: flex;
             flex-direction: column;
@@ -469,7 +500,7 @@
 
         .blog-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         .blog-meta {
@@ -540,7 +571,7 @@
             background: white;
             border-radius: 0;
             padding: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             transition: all 0.3s;
             display: flex;
             flex-direction: column;
@@ -548,7 +579,7 @@
         }
 
         .publication-card:hover {
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         .publication-source {
@@ -980,13 +1011,13 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
             transition: all 0.3s;
         }
 
         .speaking-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         .speaking-image {
@@ -1155,6 +1186,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -1184,7 +1216,8 @@
                     Product Manager, Payments at Google
                 </h1>
                 <p>
-                    Building Google's consumer payments platform powering YouTube, Google Play, and Google Store. Previously drove payment innovation at Adobe and PayPal across global markets.
+                    Building Google's consumer payments platform powering YouTube, Google Play, and Google Store.
+                    Previously drove payment innovation at Adobe and PayPal across global markets.
                 </p>
                 <div class="hero-cta">
                     <a href="#blog" class="btn btn-primary">Read My Blog</a>
@@ -1207,13 +1240,21 @@
             <div class="experience-text-full">
                 <h3>Building the Future of Payments</h3>
                 <p>
-                    As a Product Manager at <strong>Google</strong>, I work within the Payments organization building the consumer payments platform that powers first-party products like YouTube, Google Play, and Google Store. My team owns payment buyflows and platform capabilities—including Full Buyflow, a hosted checkout experience handling product details, payment method selection, and legal messaging, and Lite Buyflow, a lightweight embedded integration for product-controlled experiences.
+                    As a Product Manager at <strong>Google</strong>, I work within the Payments organization building
+                    the consumer payments platform that powers first-party products like YouTube, Google Play, and
+                    Google Store. My team owns payment buyflows and platform capabilities—including Full Buyflow, a
+                    hosted checkout experience handling product details, payment method selection, and legal messaging,
+                    and Lite Buyflow, a lightweight embedded integration for product-controlled experiences.
                 </p>
                 <p>
-                    Before Google, I drove payment innovation at <strong>Adobe</strong>, where I pioneered ML platforms and expanded payment operations across global markets, and at <strong>PayPal</strong>, where I architected real-time fraud detection systems processing billions in annual volume.
+                    Before Google, I drove payment innovation at <strong>Adobe</strong>, where I pioneered ML platforms
+                    and expanded payment operations across global markets, and at <strong>PayPal</strong>, where I
+                    architected real-time fraud detection systems processing billions in annual volume.
                 </p>
                 <p>
-                    My expertise spans the full payments stack—from checkout UX and platform infrastructure to fraud detection, risk management, and global compliance. I focus on turning complex payment challenges into seamless, reliable experiences for consumers at scale.
+                    My expertise spans the full payments stack—from checkout UX and platform infrastructure to fraud
+                    detection, risk management, and global compliance. I focus on turning complex payment challenges
+                    into seamless, reliable experiences for consumers at scale.
                 </p>
             </div>
 
@@ -1253,24 +1294,32 @@
                 <div class="featured-card">
                     <span class="card-tag">Industry Article</span>
                     <h3>From Optimization to Autonomy: Building Data Foundations for Agentic Payments</h3>
-                    <p>Exploring how AI agents are transforming payment processing through intelligent automation and data-driven decision making.</p>
-                    <a href="https://thepaypers.com/payments/expert-views/from-optimisation-to-autonomy-building-the-data-foundations-for-agentic-payments" class="card-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Featured Work', 'event_label': 'Agentic Payments - The Paypers'});">
+                    <p>Exploring how AI agents are transforming payment processing through intelligent automation and
+                        data-driven decision making.</p>
+                    <a href="https://thepaypers.com/payments/expert-views/from-optimisation-to-autonomy-building-the-data-foundations-for-agentic-payments"
+                        class="card-link" target="_blank"
+                        onclick="gtag('event', 'click', {'event_category': 'Featured Work', 'event_label': 'Agentic Payments - The Paypers'});">
                         Read Article →
                     </a>
                 </div>
                 <div class="featured-card">
                     <span class="card-tag media">Media Feature</span>
                     <h3>The Future of Payment Optimization: Using AI to Make Every Transaction Count</h3>
-                    <p>Featured in FinanceFeeds discussing how artificial intelligence is revolutionizing payment success rates.</p>
-                    <a href="https://financefeeds.com/the-future-of-payment-optimization-how-devang-gaur-is-using-ai-to-make-every-transaction-count" class="card-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Featured Work', 'event_label': 'Payment Optimization - FinanceFeeds'});">
+                    <p>Featured in FinanceFeeds discussing how artificial intelligence is revolutionizing payment
+                        success rates.</p>
+                    <a href="https://financefeeds.com/the-future-of-payment-optimization-how-devang-gaur-is-using-ai-to-make-every-transaction-count"
+                        class="card-link" target="_blank"
+                        onclick="gtag('event', 'click', {'event_category': 'Featured Work', 'event_label': 'Payment Optimization - FinanceFeeds'});">
                         Read Article →
                     </a>
                 </div>
                 <div class="featured-card">
                     <span class="card-tag blog">Latest Blog</span>
                     <h3>Virality is Not Born, It Is Made: Part 2</h3>
-                    <p>How companies strategically design products to become viral through social currency and the STEPPS framework.</p>
-                    <a href="blog/virality-part-2.html" class="card-link" onclick="gtag('event', 'click', {'event_category': 'Featured Work', 'event_label': 'Virality Part 2 Blog'});">
+                    <p>How companies strategically design products to become viral through social currency and the
+                        STEPPS framework.</p>
+                    <a href="blog/virality-part-2.html" class="card-link"
+                        onclick="gtag('event', 'click', {'event_category': 'Featured Work', 'event_label': 'Virality Part 2 Blog'});">
                         Read Blog →
                     </a>
                 </div>
@@ -1288,23 +1337,28 @@
             <div class="expertise-grid">
                 <div class="expertise-card">
                     <h4>Authorization Intelligence</h4>
-                    <p>ML-powered authorization optimization, network token implementation (Visa NTI, Mastercard TRACE ID), and intelligent retry strategies</p>
+                    <p>ML-powered authorization optimization, network token implementation (Visa NTI, Mastercard TRACE
+                        ID), and intelligent retry strategies</p>
                 </div>
                 <div class="expertise-card">
                     <h4>Agentic Payment Systems</h4>
-                    <p>Building autonomous payment workflows with AI agents that make intelligent routing and processing decisions</p>
+                    <p>Building autonomous payment workflows with AI agents that make intelligent routing and processing
+                        decisions</p>
                 </div>
                 <div class="expertise-card">
                     <h4>AI-Powered Risk Management</h4>
-                    <p>Real-time fraud detection, predictive risk scoring, and ML models processing billions in payment volume</p>
+                    <p>Real-time fraud detection, predictive risk scoring, and ML models processing billions in payment
+                        volume</p>
                 </div>
                 <div class="expertise-card">
                     <h4>Payment Optimization</h4>
-                    <p>Data-driven algorithms for routing, compliance automation (PSD2, 3DS), and payment chain architecture</p>
+                    <p>Data-driven algorithms for routing, compliance automation (PSD2, 3DS), and payment chain
+                        architecture</p>
                 </div>
                 <div class="expertise-card">
                     <h4>Stored Credentials & Tokenization</h4>
-                    <p>Card-on-file compliance, secure credential storage, and tokenization strategies across payment networks</p>
+                    <p>Card-on-file compliance, secure credential storage, and tokenization strategies across payment
+                        networks</p>
                 </div>
                 <div class="expertise-card">
                     <h4>Global Payment Infrastructure</h4>
@@ -1325,85 +1379,110 @@
                 <button class="slider-arrow prev" onclick="slideBlog(-1)">‹</button>
                 <div class="slider-wrapper">
                     <div class="blog-grid" id="blog-slider-track">
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">Sep 15, 2021</span>
-                        <span class="blog-category">Products</span>
-                    </div>
-                    <h4>Virality is Not Born, It Is Made: Part 2 | Minting Social Currency</h4>
-                    <p class="blog-excerpt">Exploring how companies strategically design products to become viral through social currency using three key strategies: intrinsic peculiarity, game mechanics, and creating insiders.</p>
-                    <a href="blog/virality-part-2.html" class="blog-link" onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Virality Part 2'});">Read More →</a>
-                </div>
+                        <div class="blog-card">
+                            <div class="blog-meta">
+                                <span class="blog-date">Sep 15, 2021</span>
+                                <span class="blog-category">Products</span>
+                            </div>
+                            <h4>Virality is Not Born, It Is Made: Part 2 | Minting Social Currency</h4>
+                            <p class="blog-excerpt">Exploring how companies strategically design products to become
+                                viral through social currency using three key strategies: intrinsic peculiarity, game
+                                mechanics, and creating insiders.</p>
+                            <a href="blog/virality-part-2.html" class="blog-link"
+                                onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Virality Part 2'});">Read
+                                More →</a>
+                        </div>
 
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">Sep 7, 2021</span>
-                        <span class="blog-category">Design</span>
-                    </div>
-                    <h4>Virality is Not Born, It Is Made: Part 1</h4>
-                    <p class="blog-excerpt">Introduction to Jonah Berger's STEPPS framework and how products achieve viral success through strategic design rather than accident.</p>
-                    <a href="blog/virality-part-1.html" class="blog-link" onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Virality Part 1'});">Read More →</a>
-                </div>
+                        <div class="blog-card">
+                            <div class="blog-meta">
+                                <span class="blog-date">Sep 7, 2021</span>
+                                <span class="blog-category">Design</span>
+                            </div>
+                            <h4>Virality is Not Born, It Is Made: Part 1</h4>
+                            <p class="blog-excerpt">Introduction to Jonah Berger's STEPPS framework and how products
+                                achieve viral success through strategic design rather than accident.</p>
+                            <a href="blog/virality-part-1.html" class="blog-link"
+                                onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Virality Part 1'});">Read
+                                More →</a>
+                        </div>
 
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">Aug 2, 2021</span>
-                        <span class="blog-category">Culture</span>
-                    </div>
-                    <h4>Spotify | Tribe Engineering Model</h4>
-                    <p class="blog-excerpt">Exploring Spotify's innovative organizational structure with squads, tribes, chapters, and guilds for managing product development teams effectively.</p>
-                    <a href="blog/spotify-tribe-model.html" class="blog-link" onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Spotify Tribe Model'});">Read More →</a>
-                </div>
+                        <div class="blog-card">
+                            <div class="blog-meta">
+                                <span class="blog-date">Aug 2, 2021</span>
+                                <span class="blog-category">Culture</span>
+                            </div>
+                            <h4>Spotify | Tribe Engineering Model</h4>
+                            <p class="blog-excerpt">Exploring Spotify's innovative organizational structure with squads,
+                                tribes, chapters, and guilds for managing product development teams effectively.</p>
+                            <a href="blog/spotify-tribe-model.html" class="blog-link"
+                                onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Spotify Tribe Model'});">Read
+                                More →</a>
+                        </div>
 
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">Jul 4, 2021</span>
-                        <span class="blog-category">Products</span>
-                    </div>
-                    <h4>What is 'Disruptive Innovation'?</h4>
-                    <p class="blog-excerpt">Examining the commonly misunderstood concept of disruptive innovation using Tesla as a case study to show what disruption really means.</p>
-                    <a href="blog/disruptive-innovation.html" class="blog-link" onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Disruptive Innovation'});">Read More →</a>
-                </div>
+                        <div class="blog-card">
+                            <div class="blog-meta">
+                                <span class="blog-date">Jul 4, 2021</span>
+                                <span class="blog-category">Products</span>
+                            </div>
+                            <h4>What is 'Disruptive Innovation'?</h4>
+                            <p class="blog-excerpt">Examining the commonly misunderstood concept of disruptive
+                                innovation using Tesla as a case study to show what disruption really means.</p>
+                            <a href="blog/disruptive-innovation.html" class="blog-link"
+                                onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Disruptive Innovation'});">Read
+                                More →</a>
+                        </div>
 
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">Jun 18, 2021</span>
-                        <span class="blog-category">Products</span>
-                    </div>
-                    <h4>Is Minimum Viable Product, Viable Anymore?</h4>
-                    <p class="blog-excerpt">Arguing why the traditional MVP approach has become less effective and why Minimum Lovable Product (MLP) is a better option in today's market.</p>
-                    <a href="blog/mvp-vs-mlp.html" class="blog-link" onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'MVP vs MLP'});">Read More →</a>
-                </div>
+                        <div class="blog-card">
+                            <div class="blog-meta">
+                                <span class="blog-date">Jun 18, 2021</span>
+                                <span class="blog-category">Products</span>
+                            </div>
+                            <h4>Is Minimum Viable Product, Viable Anymore?</h4>
+                            <p class="blog-excerpt">Arguing why the traditional MVP approach has become less effective
+                                and why Minimum Lovable Product (MLP) is a better option in today's market.</p>
+                            <a href="blog/mvp-vs-mlp.html" class="blog-link"
+                                onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'MVP vs MLP'});">Read
+                                More →</a>
+                        </div>
 
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">Jun 5, 2021</span>
-                        <span class="blog-category">Products</span>
-                    </div>
-                    <h4>What Drives User Behavior?</h4>
-                    <p class="blog-excerpt">Exploring Prof. B.J. Fogg's behavior model (B = MAT) and how tech companies leverage psychology to create habit-forming products.</p>
-                    <a href="blog/user-behavior.html" class="blog-link" onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'User Behavior'});">Read More →</a>
-                </div>
+                        <div class="blog-card">
+                            <div class="blog-meta">
+                                <span class="blog-date">Jun 5, 2021</span>
+                                <span class="blog-category">Products</span>
+                            </div>
+                            <h4>What Drives User Behavior?</h4>
+                            <p class="blog-excerpt">Exploring Prof. B.J. Fogg's behavior model (B = MAT) and how tech
+                                companies leverage psychology to create habit-forming products.</p>
+                            <a href="blog/user-behavior.html" class="blog-link"
+                                onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'User Behavior'});">Read
+                                More →</a>
+                        </div>
 
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">Jun 1, 2021</span>
-                        <span class="blog-category">Products</span>
-                    </div>
-                    <h4>Manipulation Matrix | A Tool to Assess Habit Forming Products</h4>
-                    <p class="blog-excerpt">Examining Nir Eyal's Manipulation Matrix framework through Flappy Bird's story and the ethics of building habit-forming products.</p>
-                    <a href="blog/manipulation-matrix.html" class="blog-link" onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Manipulation Matrix'});">Read More →</a>
-                </div>
+                        <div class="blog-card">
+                            <div class="blog-meta">
+                                <span class="blog-date">Jun 1, 2021</span>
+                                <span class="blog-category">Products</span>
+                            </div>
+                            <h4>Manipulation Matrix | A Tool to Assess Habit Forming Products</h4>
+                            <p class="blog-excerpt">Examining Nir Eyal's Manipulation Matrix framework through Flappy
+                                Bird's story and the ethics of building habit-forming products.</p>
+                            <a href="blog/manipulation-matrix.html" class="blog-link"
+                                onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Manipulation Matrix'});">Read
+                                More →</a>
+                        </div>
 
-                <div class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">May 14, 2021</span>
-                        <span class="blog-category">Products</span>
-                    </div>
-                    <h4>Why Do Products Fail?</h4>
-                    <p class="blog-excerpt">Exploring product failure through the painkiller vs vitamin framework and how successful products blend both categories to form habits.</p>
-                    <a href="blog/why-products-fail.html" class="blog-link" onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Why Products Fail'});">Read More →</a>
-                </div>
+                        <div class="blog-card">
+                            <div class="blog-meta">
+                                <span class="blog-date">May 14, 2021</span>
+                                <span class="blog-category">Products</span>
+                            </div>
+                            <h4>Why Do Products Fail?</h4>
+                            <p class="blog-excerpt">Exploring product failure through the painkiller vs vitamin
+                                framework and how successful products blend both categories to form habits.</p>
+                            <a href="blog/why-products-fail.html" class="blog-link"
+                                onclick="gtag('event', 'click', {'event_category': 'Blog', 'event_label': 'Why Products Fail'});">Read
+                                More →</a>
+                        </div>
                     </div>
                 </div>
                 <button class="slider-arrow next" onclick="slideBlog(1)">›</button>
@@ -1422,71 +1501,90 @@
                 <button class="slider-arrow prev" onclick="slidePublications(-1)">‹</button>
                 <div class="slider-wrapper">
                     <div class="publications-grid" id="publications-slider-track">
-                <!-- Industry Articles -->
-                <div class="publication-card">
-                    <div class="publication-source">Merchant Risk Council</div>
-                    <h4>Card-on-File Done Right: How to Stay Compliant with the Stored Credential Mandate</h4>
-                    <a href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/card-on-file-done-right-how-to-stay-compliant-with-the-stored-credential-mandate" class="publication-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Publications', 'event_label': 'Card-on-File - MRC'});">
-                        Read More →
-                    </a>
-                </div>
+                        <!-- Industry Articles -->
+                        <div class="publication-card">
+                            <div class="publication-source">Merchant Risk Council</div>
+                            <h4>Card-on-File Done Right: How to Stay Compliant with the Stored Credential Mandate</h4>
+                            <a href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/card-on-file-done-right-how-to-stay-compliant-with-the-stored-credential-mandate"
+                                class="publication-link" target="_blank"
+                                onclick="gtag('event', 'click', {'event_category': 'Publications', 'event_label': 'Card-on-File - MRC'});">
+                                Read More →
+                            </a>
+                        </div>
 
-                <div class="publication-card">
-                    <div class="publication-source">Merchant Risk Council</div>
-                    <h4>Boosting Authorization Success: A Practical Guide to Visa NTI and Mastercard TRACE ID Mandates</h4>
-                    <a href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/boosting-authorization-success-a-practical-guide-to-visa-nti-and-mastercard-trace-id-mandates" class="publication-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Publications', 'event_label': 'Visa NTI Guide - MRC'});">
-                        Read More →
-                    </a>
-                </div>
+                        <div class="publication-card">
+                            <div class="publication-source">Merchant Risk Council</div>
+                            <h4>Boosting Authorization Success: A Practical Guide to Visa NTI and Mastercard TRACE ID
+                                Mandates</h4>
+                            <a href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/boosting-authorization-success-a-practical-guide-to-visa-nti-and-mastercard-trace-id-mandates"
+                                class="publication-link" target="_blank"
+                                onclick="gtag('event', 'click', {'event_category': 'Publications', 'event_label': 'Visa NTI Guide - MRC'});">
+                                Read More →
+                            </a>
+                        </div>
 
-                <div class="publication-card">
-                    <div class="publication-source">Merchant Risk Council</div>
-                    <h4>Building a Trusted Payment Chain</h4>
-                    <a href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/building-a-trusted-payment-chain" class="publication-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Publications', 'event_label': 'Trusted Payment Chain - MRC'});">
-                        Read More →
-                    </a>
-                </div>
+                        <div class="publication-card">
+                            <div class="publication-source">Merchant Risk Council</div>
+                            <h4>Building a Trusted Payment Chain</h4>
+                            <a href="https://merchantriskcouncil.org/learning/resource-center/member-news/blog/2025/building-a-trusted-payment-chain"
+                                class="publication-link" target="_blank"
+                                onclick="gtag('event', 'click', {'event_category': 'Publications', 'event_label': 'Trusted Payment Chain - MRC'});">
+                                Read More →
+                            </a>
+                        </div>
 
-                <div class="publication-card">
-                    <div class="publication-source">The Paypers</div>
-                    <h4>From Optimisation to Autonomy: Building the Data Foundations for Agentic Payments</h4>
-                    <a href="https://thepaypers.com/payments/expert-views/from-optimisation-to-autonomy-building-the-data-foundations-for-agentic-payments" class="publication-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Publications', 'event_label': 'Agentic Payments - The Paypers'});">
-                        Read More →
-                    </a>
-                </div>
+                        <div class="publication-card">
+                            <div class="publication-source">The Paypers</div>
+                            <h4>From Optimisation to Autonomy: Building the Data Foundations for Agentic Payments</h4>
+                            <a href="https://thepaypers.com/payments/expert-views/from-optimisation-to-autonomy-building-the-data-foundations-for-agentic-payments"
+                                class="publication-link" target="_blank"
+                                onclick="gtag('event', 'click', {'event_category': 'Publications', 'event_label': 'Agentic Payments - The Paypers'});">
+                                Read More →
+                            </a>
+                        </div>
 
-                <!-- Media Features -->
-                <div class="publication-card">
-                    <div class="publication-source">TechTimes</div>
-                    <h4>Beyond the Failure Point: How Devang Gaur is Making eCommerce Payments Work Intelligently</h4>
-                    <a href="https://www.techtimes.com/articles/310910/20250619/beyond-failure-point-how-devang-gaur-making-ecommerce-payments-workintelligently.htm" class="publication-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Media', 'event_label': 'TechTimes Feature'});">
-                        Read More →
-                    </a>
-                </div>
+                        <!-- Media Features -->
+                        <div class="publication-card">
+                            <div class="publication-source">TechTimes</div>
+                            <h4>Beyond the Failure Point: How Devang Gaur is Making eCommerce Payments Work
+                                Intelligently</h4>
+                            <a href="https://www.techtimes.com/articles/310910/20250619/beyond-failure-point-how-devang-gaur-making-ecommerce-payments-workintelligently.htm"
+                                class="publication-link" target="_blank"
+                                onclick="gtag('event', 'click', {'event_category': 'Media', 'event_label': 'TechTimes Feature'});">
+                                Read More →
+                            </a>
+                        </div>
 
-                <div class="publication-card">
-                    <div class="publication-source">FinanceFeeds</div>
-                    <h4>The Future of Payment Optimization: How Devang Gaur is Using AI to Make Every Transaction Count</h4>
-                    <a href="https://financefeeds.com/the-future-of-payment-optimization-how-devang-gaur-is-using-ai-to-make-every-transaction-count" class="publication-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Media', 'event_label': 'FinanceFeeds Feature'});">
-                        Read More →
-                    </a>
-                </div>
+                        <div class="publication-card">
+                            <div class="publication-source">FinanceFeeds</div>
+                            <h4>The Future of Payment Optimization: How Devang Gaur is Using AI to Make Every
+                                Transaction Count</h4>
+                            <a href="https://financefeeds.com/the-future-of-payment-optimization-how-devang-gaur-is-using-ai-to-make-every-transaction-count"
+                                class="publication-link" target="_blank"
+                                onclick="gtag('event', 'click', {'event_category': 'Media', 'event_label': 'FinanceFeeds Feature'});">
+                                Read More →
+                            </a>
+                        </div>
 
-                <div class="publication-card">
-                    <div class="publication-source">Inverse</div>
-                    <h4>Regulation as Advantage: How Devang Gaur Turns Compliance into a Growth Strategy</h4>
-                    <a href="https://www.inverse.com/tech/regulation-as-advantage-how-devang-gaur-turns-compliance-into-a-growth-strategy" class="publication-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Media', 'event_label': 'Inverse Feature'});">
-                        Read More →
-                    </a>
-                </div>
+                        <div class="publication-card">
+                            <div class="publication-source">Inverse</div>
+                            <h4>Regulation as Advantage: How Devang Gaur Turns Compliance into a Growth Strategy</h4>
+                            <a href="https://www.inverse.com/tech/regulation-as-advantage-how-devang-gaur-turns-compliance-into-a-growth-strategy"
+                                class="publication-link" target="_blank"
+                                onclick="gtag('event', 'click', {'event_category': 'Media', 'event_label': 'Inverse Feature'});">
+                                Read More →
+                            </a>
+                        </div>
 
-                <div class="publication-card">
-                    <div class="publication-source">Apple News</div>
-                    <h4>Featured Article on Payment Innovation</h4>
-                    <a href="https://apple.news/ArQgyB2tkQ_qRirgCgd3Z_g" class="publication-link" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Media', 'event_label': 'Apple News Feature'});">
-                        Read More →
-                    </a>
-                </div>
+                        <div class="publication-card">
+                            <div class="publication-source">Apple News</div>
+                            <h4>Featured Article on Payment Innovation</h4>
+                            <a href="https://apple.news/ArQgyB2tkQ_qRirgCgd3Z_g" class="publication-link"
+                                target="_blank"
+                                onclick="gtag('event', 'click', {'event_category': 'Media', 'event_label': 'Apple News Feature'});">
+                                Read More →
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <button class="slider-arrow next" onclick="slidePublications(1)">›</button>
@@ -1503,34 +1601,40 @@
             </div>
             <div class="speaking-grid">
                 <div class="speaking-card">
-                    <img src="Pictures/Industry Conferences/mrc1.jpeg" alt="Speaking at Merchant Risk Council" class="speaking-image">
+                    <img src="Pictures/Industry Conferences/mrc1.jpeg" alt="Speaking at Merchant Risk Council"
+                        class="speaking-image">
                     <div class="speaking-content">
                         <div class="speaking-event">Merchant Risk Council</div>
                         <h4>Payment Innovation & Risk Management</h4>
                         <p class="speaking-description">
-                            Presented on payment optimization strategies, involuntary churn reduction, and the impact of payment failures on customer experience and business KPIs.
+                            Presented on payment optimization strategies, involuntary churn reduction, and the impact of
+                            payment failures on customer experience and business KPIs.
                         </p>
                     </div>
                 </div>
 
                 <div class="speaking-card">
-                    <img src="Pictures/Industry Conferences/pls2.jpeg" alt="Panel at Payments Leadership Summit" class="speaking-image">
+                    <img src="Pictures/Industry Conferences/pls2.jpeg" alt="Panel at Payments Leadership Summit"
+                        class="speaking-image">
                     <div class="speaking-content">
                         <div class="speaking-event">Payments Leadership Summit</div>
                         <h4>Panel Discussion: Future of Payment Technology</h4>
                         <p class="speaking-description">
-                            Participated in expert panel discussing AI-powered payment optimization, network tokens, and emerging payment technologies shaping the industry.
+                            Participated in expert panel discussing AI-powered payment optimization, network tokens, and
+                            emerging payment technologies shaping the industry.
                         </p>
                     </div>
                 </div>
 
                 <div class="speaking-card">
-                    <img src="Pictures/Industry Conferences/pls3.jpeg" alt="Payments Conference Speaking" class="speaking-image">
+                    <img src="Pictures/Industry Conferences/pls3.jpeg" alt="Payments Conference Speaking"
+                        class="speaking-image">
                     <div class="speaking-content">
                         <div class="speaking-event">Industry Conference</div>
                         <h4>Payment Compliance & Global Expansion</h4>
                         <p class="speaking-description">
-                            Shared insights on navigating payment compliance mandates, implementing local payment methods, and scaling payment operations across global markets.
+                            Shared insights on navigating payment compliance mandates, implementing local payment
+                            methods, and scaling payment operations across global markets.
                         </p>
                     </div>
                 </div>
@@ -1562,275 +1666,312 @@
                     <button class="slider-arrow prev" onclick="slideVideo('life-of-dollar', -1)">‹</button>
                     <div class="video-slider">
                         <div class="video-slider-track" id="life-of-dollar-track">
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7279902764267151360', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep0.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7279902764267151360"
-                                    allowfullscreen=""
-                                    title="Life of a Dollar - Series Launch"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Series Announcement</div>
-                            <h4>Life of a Dollar - Series Launch</h4>
-                            <p class="video-description">Introduction to the educational series exploring how payment transactions work from start to finish.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7279902764267151360', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep0.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7279902764267151360"
+                                        allowfullscreen="" title="Life of a Dollar - Series Launch"
+                                        frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Series Announcement</div>
+                                    <h4>Life of a Dollar - Series Launch</h4>
+                                    <p class="video-description">Introduction to the educational series exploring how
+                                        payment transactions work from start to finish.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7280583642706276352', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep1.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7280583642706276352"
-                                    allowfullscreen=""
-                                    title="The Fresno Drop"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 1</div>
-                            <h4>The Fresno Drop</h4>
-                            <p class="video-description">The fascinating origin story of how credit cards began with the Fresno Drop experiment.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7280583642706276352', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep1.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7280583642706276352"
+                                        allowfullscreen="" title="The Fresno Drop" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 1</div>
+                                    <h4>The Fresno Drop</h4>
+                                    <p class="video-description">The fascinating origin story of how credit cards began
+                                        with the Fresno Drop experiment.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7281852630375505920', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep1.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7281852630375505920"
-                                    allowfullscreen=""
-                                    title="Open vs Closed Networks"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 2</div>
-                            <h4>Open vs Closed Networks</h4>
-                            <p class="video-description">Understanding the fundamental difference between open and closed payment networks.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7281852630375505920', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep1.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7281852630375505920"
+                                        allowfullscreen="" title="Open vs Closed Networks" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 2</div>
+                                    <h4>Open vs Closed Networks</h4>
+                                    <p class="video-description">Understanding the fundamental difference between open
+                                        and closed payment networks.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7282429623831863296', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep2.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7282429623831863296"
-                                    allowfullscreen=""
-                                    title="Payments Stakeholders"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 3</div>
-                            <h4>Payments Stakeholders</h4>
-                            <p class="video-description">Meet all the key players involved in processing a single payment transaction.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7282429623831863296', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep2.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7282429623831863296"
+                                        allowfullscreen="" title="Payments Stakeholders" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 3</div>
+                                    <h4>Payments Stakeholders</h4>
+                                    <p class="video-description">Meet all the key players involved in processing a
+                                        single payment transaction.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7283158787975180288', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep3.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7283158787975180288"
-                                    allowfullscreen=""
-                                    title="Cash Discounts"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 4</div>
-                            <h4>Cash Discounts</h4>
-                            <p class="video-description">How cash discounting programs work and their impact on payment processing costs.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7283158787975180288', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep3.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7283158787975180288"
+                                        allowfullscreen="" title="Cash Discounts" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 4</div>
+                                    <h4>Cash Discounts</h4>
+                                    <p class="video-description">How cash discounting programs work and their impact on
+                                        payment processing costs.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7284722593297846273', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep4.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7284722593297846273"
-                                    allowfullscreen=""
-                                    title="Costco & American Express"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 5</div>
-                            <h4>Costco & American Express</h4>
-                            <p class="video-description">The strategic partnership between Costco and AmEx and what it teaches about payment economics.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7284722593297846273', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep4.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7284722593297846273"
+                                        allowfullscreen="" title="Costco & American Express" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 5</div>
+                                    <h4>Costco & American Express</h4>
+                                    <p class="video-description">The strategic partnership between Costco and AmEx and
+                                        what it teaches about payment economics.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7285467446667366400', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep5.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7285467446667366400"
-                                    allowfullscreen=""
-                                    title="Merchant Category Codes"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 6</div>
-                            <h4>Merchant Category Codes</h4>
-                            <p class="video-description">Understanding MCCs and how they categorize merchants in the payment ecosystem.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7285467446667366400', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep5.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7285467446667366400"
+                                        allowfullscreen="" title="Merchant Category Codes" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 6</div>
+                                    <h4>Merchant Category Codes</h4>
+                                    <p class="video-description">Understanding MCCs and how they categorize merchants in
+                                        the payment ecosystem.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7286578124262195201', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep7.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7286578124262195201"
-                                    allowfullscreen=""
-                                    title="Card Numbers Explained"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 7</div>
-                            <h4>Card Numbers Explained</h4>
-                            <p class="video-description">Decoding the meaning behind every digit on your payment card.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7286578124262195201', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep7.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7286578124262195201"
+                                        allowfullscreen="" title="Card Numbers Explained" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 7</div>
+                                    <h4>Card Numbers Explained</h4>
+                                    <p class="video-description">Decoding the meaning behind every digit on your payment
+                                        card.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7287670654600990720', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep8.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7287670654600990720"
-                                    allowfullscreen=""
-                                    title="Tokenization"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 8</div>
-                            <h4>Tokenization</h4>
-                            <p class="video-description">How tokenization protects card data and improves payment security.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7287670654600990720', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep8.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7287670654600990720"
+                                        allowfullscreen="" title="Tokenization" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 8</div>
+                                    <h4>Tokenization</h4>
+                                    <p class="video-description">How tokenization protects card data and improves
+                                        payment security.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7288809655701516288', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep9.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7288809655701516288"
-                                    allowfullscreen=""
-                                    title="Card Expiration Dates"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 9</div>
-                            <h4>Card Expiration Dates</h4>
-                            <p class="video-description">Why cards expire and what happens when expiration dates approach.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7288809655701516288', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep9.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7288809655701516288"
+                                        allowfullscreen="" title="Card Expiration Dates" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 9</div>
+                                    <h4>Card Expiration Dates</h4>
+                                    <p class="video-description">Why cards expire and what happens when expiration dates
+                                        approach.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7289847190062055425', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep10.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7289847190062055425"
-                                    allowfullscreen=""
-                                    title="Chargebacks"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 10</div>
-                            <h4>Chargebacks</h4>
-                            <p class="video-description">Understanding the chargeback process and its impact on merchants.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7289847190062055425', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep10.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7289847190062055425"
+                                        allowfullscreen="" title="Chargebacks" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 10</div>
+                                    <h4>Chargebacks</h4>
+                                    <p class="video-description">Understanding the chargeback process and its impact on
+                                        merchants.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7290613476442431488', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep11.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7290613476442431488"
-                                    allowfullscreen=""
-                                    title="3D Secure Authentication"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 11</div>
-                            <h4>3D Secure Authentication</h4>
-                            <p class="video-description">How 3DS adds an extra layer of security to online payments.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7290613476442431488', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep11.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7290613476442431488"
+                                        allowfullscreen="" title="3D Secure Authentication" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 11</div>
+                                    <h4>3D Secure Authentication</h4>
+                                    <p class="video-description">How 3DS adds an extra layer of security to online
+                                        payments.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7292044154883166208', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep12.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7292044154883166208"
-                                    allowfullscreen=""
-                                    title="Reward Cards"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 12</div>
-                            <h4>Reward Cards</h4>
-                            <p class="video-description">How credit card rewards programs work and who benefits from them.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7292044154883166208', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep12.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7292044154883166208"
+                                        allowfullscreen="" title="Reward Cards" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 12</div>
+                                    <h4>Reward Cards</h4>
+                                    <p class="video-description">How credit card rewards programs work and who benefits
+                                        from them.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7293138872211841026', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep13.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7293138872211841026"
-                                    allowfullscreen=""
-                                    title="Who Pays for Rewards?"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 13</div>
-                            <h4>Who Pays for Rewards?</h4>
-                            <p class="video-description">The economics behind credit card rewards and who really foots the bill.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7293138872211841026', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep13.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7293138872211841026"
+                                        allowfullscreen="" title="Who Pays for Rewards?" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 13</div>
+                                    <h4>Who Pays for Rewards?</h4>
+                                    <p class="video-description">The economics behind credit card rewards and who really
+                                        foots the bill.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7294754517575774209', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep14.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7294754517575774209"
-                                    allowfullscreen=""
-                                    title="ZIP Code Security"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 14</div>
-                            <h4>ZIP Code Security</h4>
-                            <p class="video-description">How ZIP code verification adds security to card-not-present transactions.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7294754517575774209', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep14.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7294754517575774209"
+                                        allowfullscreen="" title="ZIP Code Security" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 14</div>
+                                    <h4>ZIP Code Security</h4>
+                                    <p class="video-description">How ZIP code verification adds security to
+                                        card-not-present transactions.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7295822795219841025', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep15.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7295822795219841025"
-                                    allowfullscreen=""
-                                    title="CVV Security Code"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 15</div>
-                            <h4>CVV Security Code</h4>
-                            <p class="video-description">The role of CVV codes in protecting against payment fraud.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7295822795219841025', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep15.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7295822795219841025"
+                                        allowfullscreen="" title="CVV Security Code" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 15</div>
+                                    <h4>CVV Security Code</h4>
+                                    <p class="video-description">The role of CVV codes in protecting against payment
+                                        fraud.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7297208173323595776', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep17.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7297208173323595776"
-                                    allowfullscreen=""
-                                    title="Card Testing Fraud"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 16</div>
-                            <h4>Card Testing Fraud</h4>
-                            <p class="video-description">How fraudsters test stolen cards and how merchants can defend against it.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7297208173323595776', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep17.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7297208173323595776"
+                                        allowfullscreen="" title="Card Testing Fraud" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 16</div>
+                                    <h4>Card Testing Fraud</h4>
+                                    <p class="video-description">How fraudsters test stolen cards and how merchants can
+                                        defend against it.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7298348205350563840', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/life of a dollar/Ep17.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7298348205350563840"
-                                    allowfullscreen=""
-                                    title="The Durbin Amendment"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 17</div>
-                            <h4>The Durbin Amendment</h4>
-                            <p class="video-description">Understanding the Durbin Amendment's impact on debit card interchange fees.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7298348205350563840', '_blank')">
+                                <div class="video-thumbnail"
+                                    style="background-image: url('thumbnails/life of a dollar/Ep17.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7298348205350563840"
+                                        allowfullscreen="" title="The Durbin Amendment" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 17</div>
+                                    <h4>The Durbin Amendment</h4>
+                                    <p class="video-description">Understanding the Durbin Amendment's impact on debit
+                                        card interchange fees.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button class="slider-arrow next" onclick="slideVideo('life-of-dollar', 1)">›</button>
@@ -1843,80 +1984,87 @@
                     <button class="slider-arrow prev" onclick="slideVideo('local-payments', -1)">‹</button>
                     <div class="video-slider">
                         <div class="video-slider-track" id="local-payments-track">
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7310154333046652929', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep1.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7310154333046652929"
-                                    allowfullscreen=""
-                                    title="Introduction to Local Payment Methods"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 1</div>
-                            <h4>Introduction to Local Payment Methods</h4>
-                            <p class="video-description">Understanding why local payment methods are crucial for global payment operations and regional preferences.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7310154333046652929', '_blank')">
+                                <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep1.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7310154333046652929"
+                                        allowfullscreen="" title="Introduction to Local Payment Methods"
+                                        frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 1</div>
+                                    <h4>Introduction to Local Payment Methods</h4>
+                                    <p class="video-description">Understanding why local payment methods are crucial for
+                                        global payment operations and regional preferences.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7311235602958430208', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep2.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7311235602958430208"
-                                    allowfullscreen=""
-                                    title="India - UPI (Unified Payments Interface)"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 2</div>
-                            <h4>India - UPI (Unified Payments Interface)</h4>
-                            <p class="video-description">How UPI revolutionized digital payments in India with instant, interoperable transactions.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7311235602958430208', '_blank')">
+                                <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep2.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7311235602958430208"
+                                        allowfullscreen="" title="India - UPI (Unified Payments Interface)"
+                                        frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 2</div>
+                                    <h4>India - UPI (Unified Payments Interface)</h4>
+                                    <p class="video-description">How UPI revolutionized digital payments in India with
+                                        instant, interoperable transactions.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7312866351516160001', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep3.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7312866351516160001"
-                                    allowfullscreen=""
-                                    title="Brazil - PIX"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 3</div>
-                            <h4>Brazil - PIX</h4>
-                            <p class="video-description">Brazil's instant payment system that transformed the country's payment landscape.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7312866351516160001', '_blank')">
+                                <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep3.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7312866351516160001"
+                                        allowfullscreen="" title="Brazil - PIX" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 3</div>
+                                    <h4>Brazil - PIX</h4>
+                                    <p class="video-description">Brazil's instant payment system that transformed the
+                                        country's payment landscape.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7313953544896761856', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep4.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7313953544896761856"
-                                    allowfullscreen=""
-                                    title="Netherlands - iDEAL"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 4</div>
-                            <h4>Netherlands - iDEAL</h4>
-                            <p class="video-description">The Dutch online banking payment method that dominates e-commerce in the Netherlands.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7313953544896761856', '_blank')">
+                                <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep4.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7313953544896761856"
+                                        allowfullscreen="" title="Netherlands - iDEAL" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 4</div>
+                                    <h4>Netherlands - iDEAL</h4>
+                                    <p class="video-description">The Dutch online banking payment method that dominates
+                                        e-commerce in the Netherlands.</p>
+                                </div>
+                            </div>
 
-                    <div class="video-card" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7316135993806360577', '_blank')">
-                        <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep5.png');">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7316135993806360577"
-                                    allowfullscreen=""
-                                    title="China - WeChat Pay"
-                                    frameborder="0"></iframe>
-                            <div class="play-icon">▶</div>
-                        </div>
-                        <div class="video-info">
-                            <div class="video-number">Episode 5</div>
-                            <h4>China - WeChat Pay</h4>
-                            <p class="video-description">Understanding WeChat Pay's dominance in China's mobile payment ecosystem.</p>
-                        </div>
-                    </div>
+                            <div class="video-card"
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7316135993806360577', '_blank')">
+                                <div class="video-thumbnail" style="background-image: url('thumbnails/lpms/Ep5.png');">
+                                    <iframe
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7316135993806360577"
+                                        allowfullscreen="" title="China - WeChat Pay" frameborder="0"></iframe>
+                                    <div class="play-icon">▶</div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-number">Episode 5</div>
+                                    <h4>China - WeChat Pay</h4>
+                                    <p class="video-description">Understanding WeChat Pay's dominance in China's mobile
+                                        payment ecosystem.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button class="slider-arrow next" onclick="slideVideo('local-payments', 1)">›</button>
@@ -1926,7 +2074,8 @@
             <!-- LinkedIn CTA -->
             <div class="linkedin-cta">
                 <p>View all payment education videos on my LinkedIn profile</p>
-                <a href="https://www.linkedin.com/in/devang-gaur/recent-activity/videos/" class="btn btn-primary" target="_blank">
+                <a href="https://www.linkedin.com/in/devang-gaur/recent-activity/videos/" class="btn btn-primary"
+                    target="_blank">
                     Visit LinkedIn Video Library
                 </a>
             </div>
@@ -1938,11 +2087,14 @@
         <div class="container">
             <div class="section-header">
                 <h2>Let's Connect</h2>
-                <p>I regularly speak on AI/ML in payments, product management, and risk management. If you're looking for expertise in these areas or want to discuss collaboration opportunities, connect with me on LinkedIn.</p>
+                <p>I regularly speak on AI/ML in payments, product management, and risk management. If you're looking
+                    for expertise in these areas or want to discuss collaboration opportunities, connect with me on
+                    LinkedIn.</p>
             </div>
             <div class="contact-content">
                 <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/devang-gaur/" class="contact-btn" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_label': 'LinkedIn CTA'});">
+                    <a href="https://www.linkedin.com/in/devang-gaur/" class="contact-btn" target="_blank"
+                        onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_label': 'LinkedIn CTA'});">
                         <img src="linkedin-logo.png" alt="LinkedIn" class="contact-logo">
                         Connect on LinkedIn
                     </a>
@@ -2215,4 +2367,5 @@
         });
     </script>
 </body>
+
 </html>
